@@ -6,7 +6,7 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <!-- Корректное масштабирование на разных устройствах -->
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Portfolio</title>
+ <title>feedback</title>
  <!--SEO -->
  <meta name="description" content="Porfolio,Gnativ Viktor,Гнатів Віктор,Портфоліо">
  <meta name="keywords" content="Porfolio,Gnativ Viktor,Гнатів Віктор,Портфоліо">
@@ -14,6 +14,7 @@
  <!-- CSS -->
  <link href="bower/normalize-css/normalize.css" rel="stylesheet">
  <link href="css/main.css" rel="stylesheet">
+ <link rel="stylesheet" href="css/feedback.css">
  <!-- JS -->
 <!-- <script src="/js/modernizr.js"></script> -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet'>
@@ -45,9 +46,9 @@
 	<div class="wrap_content clearfix">
 		<aside>
 			<div class="nav_menu">
-				<a href="index.html" class="t_info_page active">Про мене</a>
+				<a href="index.html" class="t_info_page">Про мене</a>
 				<a href="myWork.html" class="t_info_page">Мої Работи</a>
-				<a href="feedback.html" class="t_info_page">Обратній звязок</a>
+				<a href="feedback.html" class="t_info_page active">Обратній звязок</a>
 			</div>
 			<div class="contact">
 				<a href="#" class="ln-contact">Контакти</a>
@@ -56,76 +57,22 @@
 				<a  href="skype:hnativ159" class="contact_me"><i class="skype_icon"><span></span></i>hnativ159</a>
 			</div>
 		</aside>
-		<!-- ABOUT ME -->
+		<!-- FEEDBACK -->
 		<section class="main_info">
-			<h1 class="t_main_info">Основна інформація</h1>
+			<h1 class="t_main_info">У вас цікавий проект? Напиши мені</h1>
 			<div class="sec_my_info">
-				<div class="my_photo">
-					<img src="img/my_photo.png" alt="photo">
-				</div>
-				<div class="my_desc">
-					<p>Мене звати: <span>Гнатів Віктор Ігорович</span></p>
-					<p>Мені років: <span>19 лет</span></p>
-					<p>Моє місто: <span>Хмельницький, України</span></p>
-					<p>Моя спеціалізація: <span>FRONTEND разработчик</span></p>
-					<div class="about_me_item">
-								<span class="item_name">Ключевые навыки:</span>
-								<div class="skills">
-									<span class="skill">html</span>
-									<span class="skill">css</span>
-									<span class="skill">javascript</span>
-									<span class="skill">git</span>
-									<span class="skill">gulp</span>
-									<span class="skill">xml</span>
-								</div>
-							</div>
-				</div>
-			</div>
-		</section>
-		<section class="main_info">
-			<h1 class="t_main_info">Опит работи</h1>
-			<div class="sec_my_info">
-				<div class="my_desc">
-					<div class="work_skill">
-					<div class="work_ic"><i class="brief"></i></div>
-						<p>"ИП Боровицкий" - Продавец дисков</p>
-						<span>Сентябрь 2005 - Август 2008</span>
-					</div>
-					<div class="work_skill">
-					<div class="work_ic"><i class="brief"></i></div>
-						<p>"ИП Боровицкий" - Продавец дисков</p>
-						<span>Сентябрь 2005 - Август 2008</span>
-					</div>
-					<div class="work_skill">
-						<div class="work_ic"><i class="brief"></i></div>
-						<p>"ИП Боровицкий" - Продавец дисков</p>
-						<span>Сентябрь 2005 - Август 2008</span>
-					</div>
-					<div class="skills"></div>
-				</div>
-			</div>
-		</section>
-		<section class="main_info">
-			<h1 class="t_main_info">Образование</h1>
-			<div class="sec_my_info">
-				<div class="my_desc">
-					<div class="work_skill">
-					<span class="work_ic"><i class="brief school"></i></span>
-						<p>Полное среднее. Физико-математический лицей № 30</p>
-						<span>1994 - 2004</span>
-					</div>
-					<div class="work_skill">
-					<span class="work_ic"><i class="brief graduate"></i></span>
-						<p>Незаконченное высшее. СПБГУ ИТМО</p>
-						<span>Октябрь 2012 - по настоящее время</span>
-					</div>
-					<div class="work_skill">
-						<span class="work_ic"><i class="brief file"></i></span>
-						<p>Курсы Loftschool.ru</p>
-						<span>Ноябрь 2014 - по настоящее время</span>
-					</div>
-					<div class="skills"></div>
-				</div>
+				<form action="#" class="reg clearfix">
+					<p class="reg_text">Імя<br/>
+					<input type="text" placeholder="Как к Вам обращаться">
+					<p>
+					<p class="reg_text">Email<br/>
+					<input type="text" placeholder="Куда мне писать">
+					</p>
+					<p class="reg_text">Сообщение
+						<textarea placeholder="Кратко в чем суть"></textarea>
+					</p>
+					<input type="submit" class="link-sub" value="Sent">
+				</form>
 			</div>
 		</section>
 	</div>

@@ -1,0 +1,38 @@
+.my_work_item {
+	display: inline-block;
+	vertical-align: top;
+	width: 168px;
+	background: #fff;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	border: 1px solid #c5c5c5;
+	border-radius: 5px;
+	text-align: center;
+	color: #727070;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.3)
+}
+
+.my_work_item:nth-child(3n){
+	margin-right: 0;
+}
+
+.img_link img {
+	width: 100%;
+}
+
+.site_work {
+	display: block;
+	padding: 10px 5px;
+	background: #f1f1f1;
+	border-top: 1px solid #bfbfbf;
+	font-size: 14px;
+	font-weight: 800;
+	color: #727070;
+}
+
+.site_describe {
+	font-size: 12px;
+	font-weight: 300;
+	margin: 0;
+	padding: 7px 5px;
+}

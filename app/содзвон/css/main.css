@@ -23,10 +23,6 @@ a, a:hover {text-decoration: none;}
 .right {float: right;}
 
 
-.wrapper {
-	min-height:100%;
-}
-
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -57,7 +53,6 @@ header {
 
 .social_item {
 	display: inline-block;
-	text-indent: -9999px;
 	margin-right: 15px;
 	width: 35px;
 	height: 35px;
@@ -65,16 +60,15 @@ header {
 	background: linear-gradient(#fcfcfc,#e7e7e7);
 	box-shadow: 0 1px 1px 0px rgba(0,0,0,.3);
 }
+
 .social_item i {
-	display: table;
-	margin-top: -14px;
-	margin-left: 5px;
+	display: block;
+	margin-top: 5px;
+	margin-left: 4px;
 	width: 24px;
 	height: 24px;
 	background: url(../img/sprite/sprite-sb.png) no-repeat center;
 }
-
-
 .social_item i.fb {
 	background-position: 8px 0;
 }
@@ -130,9 +124,7 @@ aside {
 	-moz-box-shadow: inset 0 2px 3px 0px rgba(255,255,255,0.4);
 	box-shadow: inset 0 2px 3px 0px rgba(255,255,255,0.4);
 }
-.nav_menu a:first-child {
-	border-radius: 5px 5px 0 0;
-}
+
 .nav_menu a:last-child {
 	border-radius: 0 0 5px 5px;
 	margin-bottom: 35px;
@@ -143,23 +135,24 @@ aside {
 	-moz-box-shadow: inset 0 2px 2px rgba(0,0,0,0.2);
 	box-shadow: inset 0 2px 2px rgba(0,0,0,0.2);
 }
-.nav_menu .active {
-	border: 1px solid #2fa185;
+.t_info_me {
 	color: #1e7465;
+	border-radius: 5px 5px 0 0;
+	border: 1px solid #2fa185;
 	background: -webkit-linear-gradient(#a5e7cb,#74b797);
 	background: -ms-linear-gradient(#a5e7cb,#74b797);
 	background: -moz-linear-gradient(#a5e7cb,#74b797);
 	background: -o-linear-gradient(#a5e7cb,#74b797);
 	background: linear-gradient(#a5e7cb,#74b797);
 }
-.nav_menu .active:hover {
+.t_info_me:hover {
 	background: -webkit-linear-gradient(#8fd9bb,#66a088);
 	background: -ms-linear-gradient(#8fd9bb,#66a088);
 	background: -moz-linear-gradient(#8fd9bb,#66a088);
 	background: -o-linear-gradient(#8fd9bb,#66a088);
 	background: linear-gradient(#8fd9bb,#66a088);
 }
-.nav_menu .active:active {
+.t_info_me:active {
 	color: #eeedec;
 	text-shadow: 0 1px 1px #000;
 	text-shadow: 0 1px 1px #000;
@@ -209,9 +202,7 @@ aside {
 /*contanct*/
 
 
-.contact {
-	margin-bottom: 100px;
-}
+
 .contact a {
 	display: block;
 	position: relative;
@@ -300,10 +291,6 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	margin-bottom: 35px;
 }
 
-.main_info:last-child {
-	margin-bottom: 100px;
-}
-
 .t_main_info {
 	margin: 0;
 	font-size: 24px;
@@ -322,10 +309,9 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 }
 
 .my_photo {
-	display: block;
+	display: inline-block;
 	float: left;
 	margin-right: 35px;
-	overflow: hidden;
 	width: 150px;
 	height: 150px;
 	border: 1px solid #d3d2d1;
@@ -398,10 +384,6 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	padding: 30px 0;
 	border-bottom: 1px solid #dbdbda;
 }
-
-.work_skill:last-child {
-	border-bottom: none;
-}
 .work_ic {
 	display: inline-block;
 	float: left;
@@ -446,10 +428,7 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 
 
 .footer {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
+	max-width: 100%;
 	padding: 20px 10px;
 	border-top: 1px solid #637b77;
 	text-align: center;

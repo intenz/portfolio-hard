@@ -1,0 +1,44 @@
+.reg {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.reg_text {
+	display: inline-block;
+	
+}
+.reg_text:first-child {
+	float: left;
+}
+
+.reg input[type="text"] {
+	width: 190px;
+
+}
+.reg input[type="text"],
+.reg textarea {
+	padding: 10px 8px;
+	color: #c7c6c6;
+	font-size: 12px;
+	font-weight: 300;
+	border: 1px solid #d6d5d3;
+	border-radius: 3px;
+	background: linear-gradient(#f1f2f2,#f4f3f4);
+	
+}
+.reg textarea {
+	width: 100%;
+}
+
+::-webkit-input placeholder {
+	font-size: 16px;
+	color: #C1C1C1;
+}
+:-moz- placeholder {
+	font-size: 16px;
+	color: #C1C1C1;
+}
+
+.reg input[type="submit"] {
+	
+}
