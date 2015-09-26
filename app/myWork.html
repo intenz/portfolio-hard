@@ -14,10 +14,10 @@
  <!-- CSS -->
  <link href="bower/normalize-css/normalize.css" rel="stylesheet">
  <link href="css/main.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet'>
  <link rel="stylesheet" href="css/mywork.css">
  <!-- JS -->
-<!-- <script src="/js/modernizr.js"></script> -->
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet'>
+ <script src="bower/modernizer/modernizr.js"></script>
 </head>
 <body>
 	<!--[if lt IE 8]>
@@ -32,10 +32,10 @@
 				<a href="/"><img src="img/logo.png" alt="logo">&nbsp;</a>
 			</div>
 			<div class="sb">
-					<a href="https://www.facebook.com/viktor.gnativ.9" class="social_item">facebook.com/viktor.gnativ.9<i class="fb"></i></a>
-					<a href="https://vk.com/id233750047" class="social_item">vk.com/id233750047<i class="b"></i></a>
-					<a href="https://twitter.com/_intenz_" class="social_item">twitter.com/_intenz_<i class="tw"></i></a>
-					<a href="https://github.com/intenz" class="social_item">github.com/intenz;<i class="gt"></i></a>
+					<a href="https://www.facebook.com/viktor.gnativ.9" class="social_item fb">facebook.com/viktor.gnativ.9</a>
+					<a href="https://vk.com/id233750047" class="social_item b">vk.com/id233750047</a>
+					<a href="https://twitter.com/_intenz_" class="social_item tw">twitter.com/_intenz_</a>
+					<a href="https://github.com/intenz" class="social_item gt">github.com/intenz;</a>
 			</div>
 		</div>
 	</header>
@@ -44,7 +44,7 @@
 <!--  NAV -->
 	<div class="nav_hr"></div>
 	<div class="wrap_content clearfix">
-		<aside>
+		<aside class="aside">
 			<div class="nav_menu">
 				<a href="index.html" class="t_info_page">Про мене</a>
 				<a href="myWork.html" class="t_info_page active">Мої Работи</a>
@@ -52,11 +52,14 @@
 			</div>
 			<div class="contact">
 				<a href="#" class="ln-contact">Контакти</a>
-				<a  href="mailto:_intenz_@ukr.net" class="contact_me"><i class="mail_icon"><span></span></i>_intenz_@ukr.net</a>
-				<a  href="tel:+380934729709" class="contact_me"><i class="phone_icon"><span></span></i>+380934729709</a>
-				<a  href="skype:hnativ159" class="contact_me"><i class="skype_icon"><span></span></i>hnativ159</a>
+				<a  href="mailto:_intenz_@ukr.net" class="contact_me mail_icon">_intenz_@ukr.net</a>
+				<a  href="tel:+380934729709" class="contact_me phone_icon">+380934729709</a>
+				<a  href="skype:hnativ159" class="contact_me skype_icon">hnativ159</a>
 			</div>
 		</aside>
+
+
+
 		<!-- MYWORK -->
 		<section class="main_info">
 			<h1 class="t_main_info">Мої работи</h1>
@@ -94,11 +97,9 @@
 <!-- FOOTER -->
 <footer class="footer">
 	<div class="clock">
-		<a href="#"><i class="ic_clock"></i>вход</a>
+		<a href="#">вход</a>
 	</div>
 	<p class="copy">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
 </footer>
-	<script src="js/main.js"></script>
-	<script src="jquery/dist/jquery.js"></script>
 </body>
 </html>

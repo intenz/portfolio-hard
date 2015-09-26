@@ -14,11 +14,13 @@
  <!-- CSS -->
  <link href="bower/normalize-css/normalize.css" rel="stylesheet">
  <link href="css/main.css" rel="stylesheet">
+	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet'> -->
  <!-- JS -->
-<!-- <script src="/js/modernizr.js"></script> -->
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet'>
-</head>
+ 	<script src="bower/jquery/dist/jquery.js"></script>
 <body>
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
 	<!--[if lt IE 8]>
 	 <p class="browsehappy">Ваш браузер <strong>устарел</strong>.
 	Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
@@ -31,10 +33,10 @@
 				<a href="/"><img src="img/logo.png" alt="logo">&nbsp;</a>
 			</div>
 			<div class="sb">
-					<a href="https://www.facebook.com/viktor.gnativ.9" class="social_item">facebook.com/viktor.gnativ.9<i class="fb"></i></a>
-					<a href="https://vk.com/id233750047" class="social_item">vk.com/id233750047<i class="b"></i></a>
-					<a href="https://twitter.com/_intenz_" class="social_item">twitter.com/_intenz_<i class="tw"></i></a>
-					<a href="https://github.com/intenz" class="social_item">github.com/intenz;<i class="gt"></i></a>
+					<a href="https://www.facebook.com/viktor.gnativ.9" class="social_item fb">facebook.com/viktor.gnativ.9</a>
+					<a href="https://vk.com/id233750047" class="social_item b">vk.com/id233750047</a>
+					<a href="https://twitter.com/_intenz_" class="social_item tw">twitter.com/_intenz_</a>
+					<a href="https://github.com/intenz" class="social_item gt">github.com/intenz;</a>
 			</div>
 		</div>
 	</header>
@@ -43,7 +45,7 @@
 <!--  NAV -->
 	<div class="nav_hr"></div>
 	<div class="wrap_content clearfix">
-		<aside>
+		<aside class="aside">
 			<div class="nav_menu">
 				<a href="index.html" class="t_info_page active">Про мене</a>
 				<a href="myWork.html" class="t_info_page">Мої Работи</a>
@@ -51,23 +53,25 @@
 			</div>
 			<div class="contact">
 				<a href="#" class="ln-contact">Контакти</a>
-				<a  href="mailto:_intenz_@ukr.net" class="contact_me"><i class="mail_icon"><span></span></i>_intenz_@ukr.net</a>
-				<a  href="tel:+380934729709" class="contact_me"><i class="phone_icon"><span></span></i>+380934729709</a>
-				<a  href="skype:hnativ159" class="contact_me"><i class="skype_icon"><span></span></i>hnativ159</a>
+				<a  href="mailto:_intenz_@ukr.net" class="contact_me mail_icon">_intenz_@ukr.net</a>
+				<a  href="tel:+380934729709" class="contact_me phone_icon">+380934729709</a>
+				<a  href="skype:hnativ159" class="contact_me skype_icon">hnativ159</a>
 			</div>
 		</aside>
+
+
 		<!-- ABOUT ME -->
 		<section class="main_info">
 			<h1 class="t_main_info">Основна інформація</h1>
 			<div class="sec_my_info">
 				<div class="my_photo">
-					<img src="img/my_photo.png" alt="photo">
+					<img src="img/my_photo1.jpg" alt="photo" class="avatar">
 				</div>
 				<div class="my_desc">
-					<p>Мене звати: <span>Гнатів Віктор Ігорович</span></p>
-					<p>Мені років: <span>19 лет</span></p>
-					<p>Моє місто: <span>Хмельницький, України</span></p>
-					<p>Моя спеціалізація: <span>FRONTEND разработчик</span></p>
+					<p class="my_desc_text">Мене звати: <span class="my_desc_w">Гнатів Віктор Ігорович</span></p>
+					<p class="my_desc_text">Мені років: <span class="my_desc_w">19 років</span></p>
+					<p class="my_desc_text">Моє місто: <span class="my_desc_w">Хмельницький, України</span></p>
+					<p class="my_desc_text">Моя спеціалізація: <span>FRONTEND разработчик</span></p>
 					<div class="about_me_item">
 								<span class="item_name">Ключевые навыки:</span>
 								<div class="skills">
@@ -87,21 +91,17 @@
 			<div class="sec_my_info">
 				<div class="my_desc">
 					<div class="work_skill">
-					<div class="work_ic"><i class="brief"></i></div>
-						<p>"ИП Боровицкий" - Продавец дисков</p>
+						<p class="work_skill_text">"ИП Боровицкий" - Продавец дисков</p>
 						<span>Сентябрь 2005 - Август 2008</span>
 					</div>
 					<div class="work_skill">
-					<div class="work_ic"><i class="brief"></i></div>
-						<p>"ИП Боровицкий" - Продавец дисков</p>
+						<p class="work_skill_text">"ИП Боровицкий" - Продавец дисков</p>
 						<span>Сентябрь 2005 - Август 2008</span>
 					</div>
 					<div class="work_skill">
-						<div class="work_ic"><i class="brief"></i></div>
-						<p>"ИП Боровицкий" - Продавец дисков</p>
+						<p class="work_skill_text">"ИП Боровицкий" - Продавец дисков</p>
 						<span>Сентябрь 2005 - Август 2008</span>
 					</div>
-					<div class="skills"></div>
 				</div>
 			</div>
 		</section>
@@ -109,22 +109,18 @@
 			<h1 class="t_main_info">Образование</h1>
 			<div class="sec_my_info">
 				<div class="my_desc">
-					<div class="work_skill">
-					<span class="work_ic"><i class="brief school"></i></span>
-						<p>Полное среднее. Физико-математический лицей № 30</p>
+					<div class="work_skill school">
+						<p class="work_skill_text">Полное среднее. Физико-математический лицей № 30</p>
 						<span>1994 - 2004</span>
 					</div>
-					<div class="work_skill">
-					<span class="work_ic"><i class="brief graduate"></i></span>
-						<p>Незаконченное высшее. СПБГУ ИТМО</p>
+					<div class="work_skill graduate">
+						<p class="work_skill_text">Незаконченное высшее. СПБГУ ИТМО</p>
 						<span>Октябрь 2012 - по настоящее время</span>
 					</div>
-					<div class="work_skill">
-						<span class="work_ic"><i class="brief file"></i></span>
-						<p>Курсы Loftschool.ru</p>
+					<div class="work_skill file">
+						<p class="work_skill_text">Курсы Loftschool.ru</p>
 						<span>Ноябрь 2014 - по настоящее время</span>
 					</div>
-					<div class="skills"></div>
 				</div>
 			</div>
 		</section>
@@ -132,12 +128,12 @@
 </div>
 <!-- FOOTER -->
 <footer class="footer">
+	<div class="container">
 	<div class="clock">
-		<a href="#"><i class="ic_clock"></i>вход</a>
+		<a href="#">вход</a>
+		</div>
+		<p class="copy">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
 	</div>
-	<p class="copy">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
 </footer>
-	<script src="js/main.js"></script>
-	<script src="jquery/dist/jquery.js"></script>
 </body>
 </html>
