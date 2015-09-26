@@ -375,33 +375,30 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 }
 
 .my_desc {
-	display: inline-block;
+	display: block;
 }
 
 .my_desc_text,
-.reg_text,
-.reg_area {
+.skill_dec {
+	display: inline-block;
 	margin: 0 0 12px 0;
 	color: #727070;
 	font-size: 14px;
 	font-weight: 600;
 }
 
+
 .my_desc_w {
 	font-weight: 400;
 }
 
-.about_me_item{
-	margin-bottom: 10px;
-	font-size: 14px;
-	font-weight: 600;
-	color: #727070;
+.skill_desc{
 	display: table;
-	}
+}
 
 .skills{
 	display: table-cell;
-	max-width: 235px;
+	max-width: 200px;
 	padding-left: 10px;
 	}
 
@@ -410,7 +407,7 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	border-radius: 2px;
 	padding: 3px 13px;
 	margin-bottom: 3px;
-	font-size: 12px;
+	font-size: 9px;
 	color: #1e7465;
 	}
 
@@ -419,7 +416,7 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	margin: 0 4px 4px -2px;
 	display: inline-block;
 	height: 25px;
-	padding: 3px 10px 0 21px;
+	padding: 3px 8px 0 18px;
 	text-shadow: 1px 0 0 rgba(184,184,184,0.8);
 	position: relative;
 }
@@ -459,7 +456,7 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	height: 50px;
 	background: #f7f7f7;
 	border-radius: 50%;
-	box-shadow: inset 1px 1px 0 rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.8);
+	box-shadow: inset 2px 2px 1px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.8);
 }
 
 .work_skill:last-child {
@@ -548,3 +545,78 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	font-size: 12px;
 	font-weight: 400;
 }
+
+
+
+
+
+/*АДАПТИВ*/
+
+@media screen and (max-width: 990px) {
+	.container {
+		max-width: 690px;
+	}
+	.wrap_content {
+		width: 642px;
+		margin: 0 auto;
+	}
+	.aside {
+		display: none;
+	}
+	.main_info {
+		width: 642px;
+	}
+}
+
+@media screen and (max-width: 675px) {
+	.container {
+		max-width: 490px;
+	}
+	.wrap_content {
+		max-width: 360px;
+		margin: 0 auto;
+	}
+	.aside {
+		display: none;
+	}
+	.sec_my_info {
+		padding: 20px 10px;
+	}
+	.main_info {
+		max-width: 360px;
+		text-align: center;
+	}
+	.my_photo {
+		display: inline-block;
+		float: none;
+		margin: 0 0 8px 0;
+	}
+
+	.my_desc {
+		display: block;
+	}
+	.my_desc_text {
+		display: block;
+		text-align: left;
+		font-size: 16px;
+	}
+	.skills {
+		padding: 0;
+	}
+	.work_skill {
+		display: block;
+		position: relative;
+	}
+	.work_skill:before {
+		float: none;
+		width: 75px;
+		height: 75px;
+		margin: 0 0 15px 0;
+	}
+	.work_skill:after{
+		position: absolute;
+		top: 45px;
+		left: 160px;
+	}
+}
+

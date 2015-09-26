@@ -2,6 +2,9 @@
 	display: block;
 	width: 400px;
 	margin: 0 auto;
+	color: #727070;
+	font-size: 14px;
+	font-weight: 600;
 }
 
 .reg_text {
@@ -13,14 +16,12 @@
 .reg_text:first-child {
 	margin: 0;
 }
-.reg_text-last-child {
-	margin-bottom: 50px;
-}
 
 .reg input[type="text"] {
-	width: 180px;
+	width: 170px;
 
 }
+
 .reg input[type="text"],
 .reg textarea {
 	margin-top: 9px;
@@ -36,7 +37,7 @@
 
 .reg textarea {
 	height: 180px;
-	width: 390px;
+	width: 380px;
 	resize: none;
 }
 
@@ -45,7 +46,7 @@
 }
 
 .kapcha input[type="text"] {
- 	margin: 25px 0 25px 5px;
+ 	margin: 25px 0 25px 19px;
 }
 
 .bnt-submit {
