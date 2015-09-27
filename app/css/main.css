@@ -46,6 +46,10 @@ header {
 	padding: 10px 0 5px 8px;
 }
 
+.meny_show {
+	display: none;
+}
+
 .logo {
 	display: inline-block;
 }
@@ -548,21 +552,42 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 
 @media screen and (max-width: 990px) {
 	.container {
-		max-width: 690px;
+		max-width: 670px;
 	}
 	.wrap_content {
 		width: 640px;
 		margin: 0 auto;
 	}
-	.aside {
+	.nav_menu {
+		display: block;
+		position: absolute;
+		top: 30px;
+		right: 5px;
+	}
+	.meny_show {
+		content: '';
+		display: block;
+		cursor: pointer;
+		float: right;
+		margin: 23px -50px 0 0;
+		width: 30px;
+		height: 30px;
+		background: linear-gradient( #f3f3f3,#fff);
+	}
+	.meny_show:hover .nav_menu{
+	display: block;
+	}
+
+	.contact {
 		display: none;
 	}
+
 	.main_info {
 		width: 640px;
 	}
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 800px) {
 	.container {
 		max-width: 490px;
 	}
