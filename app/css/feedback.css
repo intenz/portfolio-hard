@@ -3,8 +3,7 @@
 	width: 400px;
 	margin: 0 auto;
 	color: #727070;
-	font-size: 14px;
-	font-weight: 600;
+	font: 600 16px 'OpenSans-Regular';
 }
 
 .reg_text {
@@ -41,13 +40,31 @@
 	resize: none;
 }
 
-.reg img {
+.wrap_kapcha {
+	display: block;
+	width: 400px; 
+}
+
+.wrap_kapcha .reg_text {
+	display: block;
+	width: 100%;
+	margin-bottom: 8px;
+}
+
+.wrap_kapcha img {
+	/*display: inline-block;*/
 	float: left;
 }
 
-.kapcha input[type="text"] {
- 	margin: 25px 0 25px 19px;
+.reg_kapcha_text {
+	display: inline-block;
+	margin: 0;
 }
+
+.reg_kapcha_text input[type="text"] {
+	margin: 25px 0 20px 14px;
+}
+
 
 .bnt-submit {
 	display: block;
@@ -62,4 +79,56 @@
 
 input[type="submit"]+input[type="submit"] {
 	margin-left: 98px;
+}
+
+@media screen and (max-width: 675px) {
+	.container {
+		max-width: 490px;
+	}
+	.wrap_content {
+		max-width: 360px;
+		margin: 0 auto;
+	}
+	.reg {
+		max-width: 280px;
+		text-align: left;
+	}
+
+	.reg_text{
+		width: 90%;
+		margin: 0 0 15px 0;
+	}
+
+	.reg_text:first-child {
+	margin-bottom: 15px;
+	}
+	.reg input[type="text"] {
+	width: 100%;
+	}
+
+	.reg textarea {
+		width: 90%;
+		height: 135px;
+	}
+	.wrap_kapcha {
+		width: 100%;
+		margin: 0;
+	}
+	.wrap_kapcha img {
+		width: 144px;
+	}
+	.reg_kapcha_text {
+		width: 90px;
+	}
+	.reg_kapcha_text input[type="text"] {
+		margin-top: 12px;
+	}
+	.bnt-submit input[type="submit"] {
+		width: 115px;
+		padding: 10px 5px;
+	}
+
+	input[type="submit"]+input[type="submit"] {
+	margin-left: 35px;
+}
 }

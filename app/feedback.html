@@ -12,10 +12,10 @@
  <meta name="keywords" content="Porfolio,Gnativ Viktor,Гнатів Віктор,Портфоліо">
  <meta name="author" content="Gnativ Viktor,Гнатів Віктор">
  <!-- CSS -->
- <link href="bower/normalize-css/normalize.css" rel="stylesheet">
- <link rel="stylesheet" href="css/feedback.css">
  <link href="css/main.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet'>
+ <link rel="stylesheet" href="css/feedback.css">
+ <link href="bower/normalize-css/normalize.css" rel="stylesheet">
+ <link rel="stylesheet" href="fons/stylesheet.css">
  <!-- JS -->
 </head>
 <body>
@@ -46,7 +46,7 @@
 		<aside class="aside">
 			<div class="nav_menu">
 				<a href="index.html" class="t_info_page">Про мене</a>
-				<a href="myWork.html" class="t_info_page">Мої Работи</a>
+				<a href="myWork.html" class="t_info_page">Мої Роботи</a>
 				<a href="feedback.html" class="t_info_page active">Обратній звязок</a>
 			</div>
 			<div class="contact">
@@ -72,10 +72,13 @@
 					<p class="reg_area">Сообщениє
 						<textarea placeholder="Кратко в чем суть"></textarea>
 					</p>
-					<p class="reg_area kapcha">Введіть код, показаний на картинці
+
+					<div class="wrap_kapcha">
+					<p class="reg_text">Введіть код, показаний на картинці</p>
 					<img src="img/my_work/kapcha.png" alt="kapcha">
+					<p class="reg_kapcha_text">
 					<input type="text" placeholder="Введите код">
-					</p>
+					</div>
 					<div class="bnt-submit">
 						<input type="submit" class="link-sub active" value="Отправить">
 						<input type="submit" class="link-sub" value="Очистить">

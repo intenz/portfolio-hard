@@ -4,7 +4,7 @@ html {
  }
 body {
 	height: 100%;
-	font: 18px/20px 'Open Sans', Verdana, sans-serif;
+	font: 600 18px/20px 'OpenSans-Semibold', Verdana, sans-serif;
 	background: url("../img/bg.jpg");
 	background-size: cover;
 }
@@ -136,9 +136,8 @@ header {
 
 .t_info_page {
 	display: block;
+	font: 600 20px 'OpenSans-Semibold';
 	padding: 18px 28px;
-	font-size: 20px;
-	font-weight: 700;
 	text-shadow: 0px 1px 1px rgba(255,255,255,0.4);
 	-webkit-box-shadow: inset 0 2px 3px 0px rgba(255,255,255,0.4);
 	-moz-box-shadow: inset 0 2px 3px 0px rgba(255,255,255,0.4);
@@ -248,8 +247,7 @@ header {
 	color: #d0982c;
 	text-shadow: 0px 1px 1px rgba(255,255,255,0.4);
 	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-	font-size: 20px;
-	font-weight: 700;
+	font: 600 20px 'OpenSans-Semibold';
 	border: 1px solid #caa152;
 	border-radius: 5px 5px 0 0;
 	background: #e1b765;/*   background для іе*/
@@ -264,7 +262,7 @@ header {
 	display: block;
 	text-align: center;
 	color: #727070;
-	font-size: 14px;
+	font: 400 14px 'OpenSans-Regular';
 	padding: 12px 2px;
 	border: 1px solid #d6d5d3;
 	-webkit-box-shadow: inset 0 2px 3px 0px rgba(255,255,255,0.4);
@@ -307,7 +305,7 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	background-position: -17px 0;
 }
 .skype_icon:after {
-	background-position: -34px 0;
+	background-position: -32px 0;
 }
 
 .contact_me:before {
@@ -339,7 +337,7 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 
 .t_main_info {
 	margin: 0;
-	font-size: 24px;
+	font: 600 24px 'OpenSans-Semibold';
 	padding: 16px 40px;
 	color: #eeedec;
 	border: 1px solid #636363;
@@ -375,7 +373,7 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 }
 
 .my_desc {
-	display: block;
+	display: initial;
 }
 
 .my_desc_text,
@@ -383,13 +381,12 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	display: inline-block;
 	margin: 0 0 12px 0;
 	color: #727070;
-	font-size: 14px;
-	font-weight: 600;
+	font: 600 15px 'OpenSans-Semibold';
 }
 
 
 .my_desc_w {
-	font-weight: 400;
+	font: 400 15px 'OpenSans-Regular';
 }
 
 .skill_desc{
@@ -444,8 +441,7 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 .work_skill_text {
 	margin: 0;
 	color: #727070;
-	font-size: 14px;
-	font-weight: 700;
+	font: 600 15px 'OpenSans-Semibold';
 }
 .work_skill:before {
 	content: '';
@@ -467,7 +463,7 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	content: '';
 	display: block;
 	position: relative;
-	top: -38px;
+	top: -35px;
 	left: 13px;
 	width: 25px;
 	height: 35px;
@@ -487,8 +483,7 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 
 .work_skill span {
 	color: #727070;
-	font-size: 14px;
-	font-weight: 400;
+	font: 400 15px 'OpenSans-Regular';
 }
 
 
@@ -520,8 +515,8 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 
 .clock a {
 	color: #727070;
-	font-size: 14px;
-	font-weight: 600;
+	text-transform: uppercase0
+	font: 600 14px 'OpenSans-Semibold';
 }
 
 .clock:after {
@@ -542,8 +537,7 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 .copy {
 	display: inline;
 	color: #727070;
-	font-size: 12px;
-	font-weight: 400;
+	font: 400 14px 'OpenSans-Light';
 }
 
 
@@ -557,14 +551,14 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 		max-width: 690px;
 	}
 	.wrap_content {
-		width: 642px;
+		width: 640px;
 		margin: 0 auto;
 	}
 	.aside {
 		display: none;
 	}
 	.main_info {
-		width: 642px;
+		width: 640px;
 	}
 }
 
