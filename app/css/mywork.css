@@ -69,7 +69,7 @@
 
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 800px) {
 	.container {
 		max-width: 490px;
 	}

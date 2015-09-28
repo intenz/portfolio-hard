@@ -81,14 +81,7 @@ input[type="submit"]+input[type="submit"] {
 	margin-left: 98px;
 }
 
-@media screen and (max-width: 675px) {
-	.container {
-		max-width: 490px;
-	}
-	.wrap_content {
-		max-width: 360px;
-		margin: 0 auto;
-	}
+@media screen and (max-width: 800px) {
 	.reg {
 		max-width: 280px;
 		text-align: left;
@@ -131,4 +124,13 @@ input[type="submit"]+input[type="submit"] {
 	input[type="submit"]+input[type="submit"] {
 	margin-left: 35px;
 }
+	.contact {
+		width: 360px;
+		bottom: 110px;
+	}
+	.wrap_content  {
+		margin-bottom: 240px;
+	}
+
+
 }

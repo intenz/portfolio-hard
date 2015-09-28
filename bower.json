@@ -1,3 +1,11 @@
 {
-	"name": "portfolio"
+  "name": "dz1_",
+  "dependencies": {
+    "jquery": "1.11",
+    "normalize.css": "~3.0.3"
+  },
+  "devDependencies": {
+    "modernizer": "~2.8.2"
+   
+  }
 }
