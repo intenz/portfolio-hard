@@ -396,7 +396,7 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 
 .skills{
 	display: table-cell;
-	max-width: 220px;
+	max-width: 210px;
 	padding-left: 10px;
 	}
 
@@ -441,26 +441,27 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 
 .work_skill_text {
 	margin: 0;
+	padding-left: 100px;
 	color: #727070;
 	font: 600 15px 'OpenSans-Semibold';
+}
+.work_skill:last-child {
+	border: none;
 }
 .work_skill:before {
 	content: '';
 	display: inline-block;
 	float: left;
-	margin-right: 40px;
 	width: 50px;
 	height: 50px;
 	background: #f7f7f7;
+	background: url(../img/sprite/sprite-work1.png) no-repeat;
 	border-radius: 50%;
 	box-shadow: inset 2px 2px 1px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.8);
 }
 
-.work_skill:last-child {
-	border: none;
-}
 
-.work_skill:after {
+/*.work_skill:after {
 	content: '';
 	display: block;
 	position: relative;
@@ -470,19 +471,20 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	height: 35px;
 	background: url(../img/sprite/sprite-work.png) no-repeat;
 	background-position: 0 0;
+}*/
+.school:before {
+	background-position: 1px -56px;
 }
-.school:after {
-	background-position: -25px 0;
+.graduate:before {
+	background-position: 2px -105px;
 }
-.graduate:after {
-	background-position: -50px 0;
-}
-.file:after {
-	margin-left: 5px;
-	background-position: -75px 0;
+.file:before {
+	background-position: 2px -149px;
 }
 
 .work_skill span {
+	display: block;
+	padding-left: 100px;
 	color: #727070;
 	font: 400 15px 'OpenSans-Regular';
 }
@@ -628,21 +630,21 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 660px) {
 	.container {
 		max-width: 490px;
 	}
 	.wrap_content {
-		max-width: 360px;
+		max-width: 400px;
 		margin: 0 auto;
 	}
 
 	.contact {
-		width: 360px;
+		width: 400px;
 		bottom: 110px;
 	}
 	.contact_me{
-		width: 354px;
+		width: 394px;
 		display: block;
 	}
 	.contact_me:after {
@@ -660,7 +662,7 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 		padding: 20px 10px;
 	}
 	.main_info {
-		max-width: 360px;
+		max-width: 400px;
 		text-align: center;
 	}
 	.my_photo {
@@ -677,24 +679,37 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 		text-align: left;
 		font-size: 16px;
 	}
+
+	.my_skills {
+		width: 100%;
+	}
 	.skills {
-		max-width: 190px;
 		padding: 0;
 	}
 	.work_skill {
 		display: block;
 		position: relative;
 	}
+	.work_skill_text {
+		padding: 0;
+	}
+	.work_skill span {
+		padding: 0;
+	}
 	.work_skill:before {
 		float: none;
 		width: 75px;
 		height: 75px;
-		margin: 0 0 15px 0;
+		background-position: 13px 11px;
 	}
-	.work_skill:after{
-		position: absolute;
-		top: 45px;
-		left: 158px;
-	}
+	.school:before {
+	background-position: 13px 11px;
+}
+.graduate:before {
+	background-position: 13px -90px;
+}
+.file:before {
+	background-position: 13px -139px;
+}
 }
 

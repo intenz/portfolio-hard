@@ -56,11 +56,12 @@
 	}
 
 	.my_work_item {
-		margin-right: 73px;
+		width: 188px;
+		margin-right: 53px;
 	}
 	
 	.my_work_item:nth-child(3n){
-	margin-right: 73px;
+	margin-right: 53px;
 	}
 
 	.my_work_item:nth-child(2n+2){
@@ -69,16 +70,17 @@
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 660px) {
 	.container {
 		max-width: 490px;
 	}
 	.sec_my_info {
-		width: 340px;
+		width: 400px;
+		padding: 20px 0px;
 	}
 
 	.my_work_wrap {
-		width: 340px;
+		width: 400px;
 		margin: 0 auto;
 		text-align: center;
 	}

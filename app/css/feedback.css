@@ -81,7 +81,7 @@ input[type="submit"]+input[type="submit"] {
 	margin-left: 98px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 660px) {
 	.reg {
 		max-width: 280px;
 		text-align: left;
