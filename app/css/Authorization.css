@@ -1,0 +1,10 @@
+.wrap_avto {
+	display: block;
+	position: absolute;
+	top: 41%;
+	left: 41%;
+	width: 330px;
+	border-radius: 5px;
+	padding: 30px;
+	background: linear-gradient(#c5c5c5,#d2d2d2);
+}

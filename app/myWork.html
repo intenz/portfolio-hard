@@ -11,11 +11,13 @@
  <meta name="description" content="Porfolio,Gnativ Viktor,Гнатів Віктор,Портфоліо">
  <meta name="keywords" content="Porfolio,Gnativ Viktor,Гнатів Віктор,Портфоліо">
  <meta name="author" content="Gnativ Viktor,Гнатів Віктор">
+  <!-- favicon -->
+ <link rel="icon" href="img/favicon.ico" type="image/x-icon">
  <!-- CSS -->
- <link href="css/main.css" rel="stylesheet">
- <link rel="stylesheet" href="css/mywork.css">
   <link rel="stylesheet" href="fons/stylesheet.css">
  <link href="bower/normalize-css/normalize.css" rel="stylesheet">
+ <link href="css/main.css" rel="stylesheet">
+ <link rel="stylesheet" href="css/mywork.css">
  <!-- JS -->
 </head>
 <body>
@@ -27,15 +29,28 @@
 	 <!-- HEADER -->
 	<header class="header clearfix">
 		<div class="container">
+					<div class="container">
 			<div class="logo">
-				<a href="/"><img src="img/logo.png" alt="logo">&nbsp;</a>
+				<a href="/"><img src="img/logo.png" alt="logo"></a>
 			</div>
+			<i class="menu_show"></i>
 			<div class="sb">
-					<a href="https://www.facebook.com/viktor.gnativ.9" class="social_item fb">facebook.com/viktor.gnativ.9</a>
-					<a href="https://vk.com/id233750047" class="social_item b">vk.com/id233750047</a>
-					<a href="https://twitter.com/_intenz_" class="social_item tw">twitter.com/_intenz_</a>
-					<a href="https://github.com/intenz" class="social_item gt">github.com/intenz;</a>
-			</div>
+				<ul class="social_ul">
+						<li class="social_link">
+							<a href="https://www.facebook.com/viktor.gnativ.9" class="social_item fb" target="_blank" >facebook.com/viktor.gnativ.9</a>
+						</li>
+						<li class="social_link">
+							<a href="https://vk.com/id233750047" class="social_item b" target="_blank">vk.com/id233750047</a>
+						</li>
+						<li class="social_link">
+							<a href="https://twitter.com/_intenz_" class="social_item tw" target="_blank">twitter.com/_intenz_</a>
+						</li>
+						<li class="social_link">
+							<a href="https://github.com/intenz" class="social_item gt" target="_blank">github.com/intenz</a>
+						</li>
+					</ul>
+				</div>
+		</div>
 		</div>
 	</header>
 
@@ -46,15 +61,33 @@
 		<aside class="aside">
 		<div class="meny_show"></div>
 			<div class="nav_menu">
-				<a href="index.html" class="t_info_page">Про мене</a>
-				<a href="myWork.html" class="t_info_page active">Мої Роботи</a>
-				<a href="feedback.html" class="t_info_page">Обратній звязок</a>
+				<ul class="menu_ul">
+					<li class="menu_link">
+						<a href="index.html" class="t_info_page">Про мене</a>
+					</li>
+					<li class="menu_link">
+						<a href="myWork.html" class="t_info_page active">Мої Роботи</a>
+					</li>
+					<li class="menu_link">
+						<a href="feedback.html" class="t_info_page">Обратній звязок</a>
+					</li>
+				</ul>
 			</div>
 			<div class="contact">
-				<a href="#" class="ln-contact">Контакти</a>
-				<a  href="mailto:_intenz_@ukr.net" class="contact_me mail_icon">_intenz_@ukr.net</a>
-				<a  href="tel:+380934729709" class="contact_me phone_icon">+380934729709</a>
-				<a  href="skype:hnativ159" class="contact_me skype_icon">hnativ159</a>
+				<ul class="ul_contact">
+					<li class="contact_item">
+						<a href="#" class="ln-contact">Контакти</a>
+					</li>
+					<li class="contact_item">
+						<a  href="mailto:_intenz_@ukr.net" class="contact_me mail_icon">_intenz_@ukr.net</a>
+					</li>
+					<li class="contact_item">
+						<a  href="tel:+380934729709" class="contact_me phone_icon">+380934729709</a>
+					</li>
+					<li class="contact_item">
+						<a  href="skype:hnativ159" class="contact_me skype_icon">hnativ159</a>
+					</li>
+				</ul>
 			</div>
 		</aside>
 
@@ -98,10 +131,12 @@
 </div>
 <!-- FOOTER -->
 <footer class="footer">
+	<div class="container">
 	<div class="clock">
 		<a href="#">вхід</a>
+		</div>
+		<p class="copy">&copy; 2015. Це мій сайт, будь ласка, не копіюйте і не крадіть його</p>
 	</div>
-	<p class="copy">&copy; 2015. Це мій сайт, будь ласка, не копіюйте і не крадіть його</p>
 </footer>
 </body>
 </html>

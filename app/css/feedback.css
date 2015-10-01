@@ -9,7 +9,7 @@
 .reg_text {
 	display: inline-block;
 	width: 190px;
-	margin: 0 0 19px 15px;
+	margin: 0 0 12px 15px;
 	
 }
 .reg_text:first-child {
@@ -23,7 +23,7 @@
 
 .reg input[type="text"],
 .reg textarea {
-	margin-top: 9px;
+	margin-top: 7px;
 	padding: 10px 8px;
 	color: #c7c6c6;
 	font-size: 12px;
@@ -34,8 +34,11 @@
 	
 }
 
+.reg_area {
+	margin: 0 0 10px 0;
+}
 .reg textarea {
-	height: 180px;
+	height: 160px;
 	width: 380px;
 	resize: none;
 }
@@ -73,12 +76,13 @@
 
 .bnt-submit input[type="submit"] {
 	font-weight: 600;
-	padding: 12px 23px;
+	margin-left: 30px;
+	padding: 8px 15px;
 	border-radius: 5px;
 }
 
 input[type="submit"]+input[type="submit"] {
-	margin-left: 98px;
+	margin-left: 95px;
 }
 
 @media screen and (max-width: 660px) {
@@ -124,13 +128,6 @@ input[type="submit"]+input[type="submit"] {
 	input[type="submit"]+input[type="submit"] {
 	margin-left: 35px;
 }
-	.contact {
-		width: 360px;
-		bottom: 110px;
-	}
-	.wrap_content  {
-		margin-bottom: 240px;
-	}
 
 
 }

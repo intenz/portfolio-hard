@@ -11,10 +11,12 @@
  <meta name="description" content="Porfolio,Gnativ Viktor,Гнатів Віктор,Портфоліо">
  <meta name="keywords" content="Porfolio,Gnativ Viktor,Гнатів Віктор,Портфоліо">
  <meta name="author" content="Gnativ Viktor,Гнатів Віктор">
+ <!-- favicon -->
+ <link rel="icon" href="img/favicon.ico" type="image/x-icon">
  <!-- CSS -->
- <link href="css/main.css" rel="stylesheet">
  <link href="bower/normalize-css/normalize.css" rel="stylesheet">
  <link rel="stylesheet" href="fons/stylesheet.css">
+ <link href="css/main.css" rel="stylesheet">
  <!--JS -->
 <body>
 <!--[if lt IE 9]>
@@ -26,17 +28,28 @@
 	 <![endif]-->
 <div class="wrapper">
 	 <!-- HEADER -->
-	<header class="header clearfix">
-		<div class="container">
+	<header class="header">
+		<div class="container clearfix">
 			<div class="logo">
-				<a href="/"><img src="img/logo.png" alt="logo">&nbsp;</a>
+				<a href="/"><img src="img/logo.png" alt="logo"></a>
 			</div>
+			<i class="menu_show"></i>
 			<div class="sb">
-					<a href="https://www.facebook.com/viktor.gnativ.9" class="social_item fb">facebook.com/viktor.gnativ.9</a>
-					<a href="https://vk.com/id233750047" class="social_item b">vk.com/id233750047</a>
-					<a href="https://twitter.com/_intenz_" class="social_item tw">twitter.com/_intenz_</a>
-					<a href="https://github.com/intenz" class="social_item gt">github.com/intenz;</a>
-			</div>
+				<ul class="social_ul">
+						<li class="social_link">
+							<a href="https://www.facebook.com/viktor.gnativ.9" class="social_item fb" target="_blank" >facebook.com/viktor.gnativ.9</a>
+						</li>
+						<li class="social_link">
+							<a href="https://vk.com/id233750047" class="social_item b" target="_blank">vk.com/id233750047</a>
+						</li>
+						<li class="social_link">
+							<a href="https://twitter.com/_intenz_" class="social_item tw" target="_blank">twitter.com/_intenz_</a>
+						</li>
+						<li class="social_link">
+							<a href="https://github.com/intenz" class="social_item gt" target="_blank">github.com/intenz</a>
+						</li>
+					</ul>
+				</div>
 		</div>
 	</header>
 
@@ -45,17 +58,32 @@
 	<div class="nav_hr"></div>
 	<div class="wrap_content clearfix">
 		<aside class="aside">
-			<div class="meny_show"></div>
 			<div class="nav_menu">
-				<a href="index.html" class="t_info_page active">Про мене</a>
-				<a href="myWork.html" class="t_info_page">Мої Роботи</a>
-				<a href="feedback.html" class="t_info_page">Обратній звязок</a>
+				<ul class="menu_ul">
+					<li class="menu_link">
+						<a href="index.html" class="t_info_page active">Про мене</a>
+					</li>
+					<li class="menu_link">
+						<a href="myWork.html" class="t_info_page">Мої Роботи</a>
+					</li>
+					<li class="menu_link">
+						<a href="feedback.html" class="t_info_page">Обратній звязок</a>
+					</li>
+				</ul>
 			</div>
 			<div class="contact">
-				<a href="#" class="ln-contact">Контакти</a>
-				<a  href="mailto:_intenz_@ukr.net" class="contact_me mail_icon">_intenz_@ukr.net</a>
-				<a  href="tel:+380934729709" class="contact_me phone_icon">+380934729709</a>
-				<a  href="skype:hnativ159" class="contact_me skype_icon">hnativ159</a>
+						<h2 class="ln-contact">Контакти</h2>
+				<ul class="ul_contact">
+					<li class="contact_item">
+						<a  href="mailto:_intenz_@ukr.net" class="contact_me mail_icon">_intenz_@ukr.net</a>
+					</li>
+					<li class="contact_item">
+						<a  href="tel:+380934729709" class="contact_me phone_icon">+380934729709</a>
+					</li>
+					<li class="contact_item">
+						<a  href="skype:hnativ159" class="contact_me skype_icon">hnativ159</a>
+					</li>
+				</ul>
 			</div>
 		</aside>
 
@@ -72,8 +100,8 @@
 					<p class="my_desc_text">Мені років: <span class="my_desc_w">19 років</span></p>
 					<p class="my_desc_text">Моє місто: <span class="my_desc_w">Хмельницький, України</span></p>
 					<p class="my_desc_text">Моя спеціалізація: <span>FRONTEND разроботчик</span></p>
-					<div class="skill_desc">
-						<p class="my_desc_text">Ключевые навыки:</p>
+					<div class="skill_desc clearfix">
+						<p class="my_desc_text left">Ключевые навыки:</p>
 						<div class="skills">
 								<span class="skill">html</span>
 								<span class="skill">css</span>
@@ -81,6 +109,7 @@
 								<span class="skill">javascript</span>
 								<span class="skill">gulp</span>
 								<span class="skill">xml</span>
+								<span class="skill">angular</span>
 						</div>
 					</div>
 				</div>
