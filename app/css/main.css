@@ -57,9 +57,19 @@ header {
 	float: left
 }
 
+.logo a {
+	display: inline-block;
+}
+
 .social_ul {
 	display: block;
 	list-style: none;
+	margin-right: 10px;
+}
+
+
+.social_link:first-child {
+	margin-left: 0;
 }
 
 .social_link {
@@ -76,7 +86,7 @@ header {
 }
 
 .social_link {
-	margin-right: 10px;
+	margin-left: 10px;
 }
 .social_item {
 	display: block;
@@ -569,13 +579,13 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 
 .clock{
 	display: inline-block;
-	margin-right: 50px;
+	float: left;
 /*	margin-left: -130px;*/
 }
 
 .clock a {
 	color: #727070;
-	text-transform: uppercase0
+	text-transform: uppercase;
 	font: 600 14px 'OpenSans-Semibold';
 }
 
@@ -627,6 +637,10 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 		padding-top: 8px
 	}
 
+	.social_ul {
+	margin-right: 0;
+	}
+
 	.nav_hr{
 		height: 5px;
 		margin-bottom: 22px;
@@ -647,12 +661,13 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	.nav_menu {
 		display: none;
 		position: absolute;
-		top: 65px;
+		top: 70px;
 		right: 17px;
 	}
 
 	.nav_menu.active {
 		display: block;
+		margin-bottom: 0;
 	}
 	
 	.t_main_info {
@@ -704,8 +719,8 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	content: '';
 	margin: 0 0 0 0;
 	position: absolute;
-	top: -35px;
-	right: 14px;
+	top: -34px;
+	right: 20px;
 	border: 15px solid transparent;
 	border-bottom: 20px solid #f4f2f2;
 	}
@@ -777,6 +792,10 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 		margin: 16px 40px 0 23px;
 	}
 	.sb {
+		float: none;
+		display: block;
+		text-align: center;
+		width: 97%;
 		position: absolute;
 		bottom: 75px;
 	}
@@ -789,15 +808,14 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 		margin: 0;
 	}*/
 
-	.social_link {
+	.social_link:first-child {
 		margin: 0px;
 	}
 
-	.social_link+.social_link {
+	.social_link {
 		margin-left: 25px;
 	}
 	.social_item {
-
 		width: 65px;
 		height: 65px;
 	}
@@ -860,8 +878,8 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	}
 
 	.nav_menu {
-		top: 65px;
-		right: 8px;
+		top: 71px;
+		right: 17px;
 	}
 
 	.main_info:last-child {
@@ -964,6 +982,10 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 }
 
 @media screen and (max-width: 450px) {
+	.sb {
+		width: 94%;
+	}
+
 	.logo {
 	margin-left: 10px;
 	}
@@ -983,8 +1005,8 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	.skills	{
 		width: 250px;
 	}
-
-	.social_link+.social_link {
-		margin-left: 10px;
+	
+	.social_link {
+		margin-left: 2px;
 	}
 }
