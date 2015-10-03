@@ -121,17 +121,32 @@
 	</div>
 </div>
 
+<!-- popup -->
+<div class="pop_enter" id="element_to_pop_up">
+			<h2 class="h_enter">Авторизируйтесь</h2>
+			<div class="enter_form">
+				<form action="" id="add_work_form" class="form_add">
+					<input type="text" placeholder="Введите название" qtip-content="Вы не ввели название">
+					<input type="password" class="file_input" placeholder="Загрузите изображение">
+					<input type="checkbox" name="vehicle" value="Bike">
+					<lable class="text_checkbox">Запомнить меня?</lable>
+					<input type = 'submit' class="submit_add" id = "Submit" value ="Войти">
+				</form>
+			</div>
+</div>
+
 <!-- FOOTER -->
 <footer class="footer">
 	<div class="container">
 	<div class="clock">
-		<a href="#">вхід</a>
+		<a href="#" class="clock_link" id="enter">вхід</a>
 		</div>
 		<p class="copy">&copy; 2015. Це мій сайт, будь ласка, не копіюйте і не крадіть його</p>
 	</div>
 </footer>
 <!-- Js -->
 	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

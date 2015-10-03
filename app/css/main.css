@@ -43,7 +43,7 @@ a, a:hover {text-decoration: none;}
 
 
 
-header {
+.header {
 	max-width: 100%;
 	background: url(../img/haeder-bg.png) repeat;
 	padding: 10px 0 5px 8px;
@@ -57,7 +57,7 @@ header {
 	float: left
 }
 
-.logo a {
+.logo_link {
 	display: inline-block;
 }
 
@@ -198,7 +198,8 @@ header {
 	box-shadow: inset 0 2px 2px rgba(0,0,0,0.2);
 }
 .t_info_page.active,
-.bnt-submit input[type="submit"].active {
+.bnt-submit input[type="submit"].active,
+.enter_form input[type="submit"] {
 	border: 1px solid #2fa185;
 	color: #eeedec;
 	background: #4fc4a7;/*   background для іе*/
@@ -210,7 +211,8 @@ header {
 	background: linear-gradient(#a5e7cb,#74b797);
 }
 .t_info_page.active:hover,
-.bnt-submit input[type="submit"].active:hover {
+.bnt-submit input[type="submit"].active:hover,
+.enter_form input[type="submit"]:hover {
 	background: #4fc4a7;/*   background для іе*/
 	background: -webkit-linear-gradient(#8fd9bb,#66a088);
 	background: -ms-linear-gradient(#8fd9bb,#66a088);
@@ -220,7 +222,8 @@ header {
 }
 
 .t_info_page.active:active,
-.bnt-submit input[type="submit"].active:active {
+.bnt-submit input[type="submit"].active:active,
+.enter_form input[type="submit"]:active {
 	color: #eeedec;
 	text-shadow: 0 1px 1px #000;
 	text-shadow: 0 1px 1px #000;
@@ -249,7 +252,6 @@ header {
 
 .t_info_page:hover,
 .bnt-submit input[type="submit"]:hover {
-	border-color: none;
 	background: #cbcaca;/*   background для іе*/
 	background: -webkit-linear-gradient(#e2e0e0,#bebdbd);
 	background: -ms-linear-gradient(#e2e0e0,#bebdbd);
@@ -281,7 +283,8 @@ header {
 	width: 250px;
 }
 
-.ul_contact{
+.ul_contact,
+.ul_desc {
 	margin: 0;
 	padding: 0;
 }
@@ -444,27 +447,30 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 
 .my_desc_text,
 .skill_dec {
-	display: inline-block;
-	margin: 0 0 4px 0;
+	display: block;
+	margin: 0 0 8px 0;
 	color: #727070;
-	font: 600 15px 'OpenSans-Semibold';
+	font: 600 14px 'OpenSans-Semibold';
 }
 
 
 .my_desc_w {
-	font: 400 15px 'OpenSans-Regular';
+	font: 400 14px 'OpenSans-Regular';
 }
 
 .skill_desc{
 	display: block;
-	padding-top: 15px;
+	padding-top: 10px;
 }
 
 .skills{
 	float: right;
 	max-width: 235px;
 	}
-
+	.ul_skill {
+		margin: 0;
+		padding: 0;
+	}
 	.skill{
 	text-transform: uppercase;
 	border-radius: 2px;
@@ -548,7 +554,7 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	background-position: 2px -149px;
 }
 
-.work_skill span {
+.work_skil_date {
 	display: block;
 	padding-left: 100px;
 	color: #727070;
@@ -583,7 +589,7 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 /*	margin-left: -130px;*/
 }
 
-.clock a {
+.clock_link {
 	color: #727070;
 	text-transform: uppercase;
 	font: 600 14px 'OpenSans-Semibold';
@@ -648,7 +654,6 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 
 	.wrap_content {
 		width: 654px;
-		margin: 0 auto;
 		margin-bottom: 60px;
 	}
 
@@ -776,7 +781,82 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	}
 }
 
-@media screen and (max-width: 660px) {
+
+/*enter-popup*/
+.pop_enter {
+	display: none;
+	width: 330px;
+	background: linear-gradient(#fbfbfa,#f0eeed);
+	padding: 40px 30px;
+	border-radius: 5px;
+	border: 1px solid #c5c5c5;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.h_enter {
+	position: absolute;
+	top: -20px;
+	left: 20px;
+	margin: 0;
+	font: 300 12px 'OpenSans-Light';
+	color: #727070;
+}
+
+.enter_form input {
+	display: block;
+	width: 245px;
+	padding: 12px 10px 13px 70px;
+	background: linear-gradient(#f7f8f9,#f4f3f3);
+	font: 300 12px 'OpenSans-Light';
+	line-height: 1;
+	color: #c7c6c6;
+	border: 1px solid #d6d5d3;
+	border-radius: 5px
+	
+}
+
+.enter_form input[type="text"] {
+	background: url(../img/sprite/enter_log.png) no-repeat 15px;
+	margin-bottom: 24px;
+}
+
+.enter_form input[type="password"] {
+	background: url(../img/sprite/enter_pass.png) no-repeat 15px;
+	margin-bottom: 18px;
+}
+
+.enter_form input[type="checkbox"] {
+	float: left;
+	width: 14px;
+	height: 15px;
+	color: #57bfa1;
+	border: none;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.text_checkbox {
+	display: block;
+	font: 400 14px 'OpenSans-Regular';
+	color: #727070;
+	margin-bottom: 23px;
+}
+
+.enter_form input[type="submit"] {
+	padding: 12px 10px;
+	text-align: center;
+	width: 150px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 680px) {
 	.container {
 	/*	max-width: 360px;*/
 	}
@@ -955,7 +1035,7 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 		margin: 12px 0 0;
 	}
 
-	.work_skill span {
+	.work_skil_date {
 		padding: 0;
 	}
 

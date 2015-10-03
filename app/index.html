@@ -31,7 +31,7 @@
 	<header class="header">
 		<div class="container clearfix">
 			<div class="logo">
-				<a href="/"><img src="img/logo.png" alt="logo"></a>
+				<a href="/" class="logo_link"><img src="img/logo.png" alt="logo"></a>
 			</div>
 			<a class="menu_show">menu</a>
 			<div class="sb">
@@ -97,19 +97,22 @@
 				</div>
 				<div class="my_desc my_skills">
 					<p class="my_desc_text">Мене звати: <span class="my_desc_w">Гнатів Віктор Ігорович</span></p>
+
 					<p class="my_desc_text">Мені років: <span class="my_desc_w">19 років</span></p>
 					<p class="my_desc_text">Моє місто: <span class="my_desc_w">Хмельницький, України</span></p>
 					<p class="my_desc_text">Моя спеціалізація: <span>FRONTEND разроботчик</span></p>
 					<div class="skill_desc clearfix">
 						<p class="my_desc_text left">Ключевые навыки:</p>
 						<div class="skills">
-								<span class="skill">html</span>
-								<span class="skill">css</span>
-								<span class="skill">git</span>
-								<span class="skill">javascript</span>
-								<span class="skill">gulp</span>
-								<span class="skill">xml</span>
-								<span class="skill">angular</span>
+						<ul class="ul_skill">
+								<li class="skill">html</li>
+								<li class="skill">css</li>
+								<li class="skill">git</li>
+								<li class="skill">javascript</li>
+								<li class="skill">gulp</li>
+								<li class="skill">xml</li>
+								<li class="skill">angular</li>
+						</ul>
 						</div>
 					</div>
 				</div>
@@ -119,18 +122,20 @@
 			<h2 class="t_main_info">Досвід роботи</h2>
 			<div class="sec_my_info clearfix">
 				<div class="my_desc">
-					<div class="work_skill">
-						<p class="work_skill_text">"ІП Боровицький" - Продавець дисків</p>
-						<span>Вересень 2005 - серпень 2008</span>
-					</div>
-					<div class="work_skill">
-						<p class="work_skill_text">"ТОВ Системи безпеки" - Системний адміністратор</p>
-						<span>Червень 2008 - липень 2010</span>
-					</div>
-					<div class="work_skill">
-						<p class="work_skill_text">Провідний аналітик з впровадження Oracle Web Center</p>
-						<span>Сер 2011 - жовтень 2012</span>
-					</div>
+					<ul class="ul_desc">
+						<li class="work_skill">
+							<p class="work_skill_text">"ІП Боровицький" - Продавець дисків</p>
+							<span class="work_skil_date">Вересень 2005 - серпень 2008</span>
+						</li>
+						<li class="work_skill">
+							<p class="work_skill_text">"ТОВ Системи безпеки" - Системний адміністратор</p>
+							<span class="work_skil_date">Червень 2008 - липень 2010</span>
+						</li>
+						<li class="work_skill">
+							<p class="work_skill_text">Провідний аналітик з впровадження Oracle Web Center</p>
+							<span class="work_skil_date">Сер 2011 - жовтень 2012</span>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
@@ -138,34 +143,53 @@
 			<h2 class="t_main_info">Освіта</h2>
 			<div class="sec_my_info ">
 				<div class="my_desc">
-					<div class="work_skill school">
-						<p class="work_skill_text">Повна середня. Фізико-математичний ліцей № 30</p>
-						<span>1994 - 2004</span>
-					</div>
-					<div class="work_skill graduate">
-						<p class="work_skill_text">Незакінчена вища. СПБГУ ИТМО</p>
-						<span>Жовтень 2012 - по теперішній час</span>
-					</div>
-					<div class="work_skill file">
-						<p class="work_skill_text">Курси Loftschool.ru</p>
-						<span>Листопад 2014 - по теперішній час</span>
-					</div>
+					<ul class="ul_desc">
+						<li class="work_skill school">
+							<p class="work_skill_text">Повна середня. Фізико-математичний ліцей № 30</p>
+							<span class="work_skil_date">1994 - 2004</span>
+						</li>
+						<li class="work_skill graduate">
+							<p class="work_skill_text">Незакінчена вища. СПБГУ ИТМО</p>
+							<span class="work_skil_date">Жовтень 2012 - по теперішній час</span>
+						</li>
+						<li class="work_skill file">
+							<p class="work_skill_text">Курси Loftschool.ru</p>
+							<span class="work_skil_date">Листопад 2014 - по теперішній час</span>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
 	</div>
 </div>
+
+
+
+<!-- popup -->
+<div class="pop_enter" id="element_to_pop_up">
+			<h2 class="h_enter">Авторизируйтесь</h2>
+			<div class="enter_form">
+				<form action="" id="add_work_form" class="form_add">
+					<input type="text" placeholder="Введите название" qtip-content="Вы не ввели название">
+					<input type="password" class="file_input" placeholder="Загрузите изображение">
+					<input type="checkbox" name="vehicle" value="Bike">
+					<lable class="text_checkbox">Запомнить меня?</lable>
+					<input type = 'submit' class="submit_add" id = "Submit" value ="Войти">
+				</form>
+			</div>
+</div>
 <!-- FOOTER -->
 <footer class="footer">
 	<div class="container">
 	<div class="clock">
-		<a href="#">вхід</a>
+		<a href="#" class="clock_link" id="enter">вхід</a>
 		</div>
 		<p class="copy">&copy; 2015. Це мій сайт, будь ласка, не копіюйте і не крадіть його</p>
 	</div>
 </footer>
 	<!-- Js -->
 	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
