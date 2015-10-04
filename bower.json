@@ -6,6 +6,7 @@
   },
   "devDependencies": {
     "modernizer": "~2.8.2"
+    "bpopup" : "~0.11.0"
    
   }
 }

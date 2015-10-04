@@ -13,8 +13,7 @@ var init = function(){
 		_setUpListners();
 	},
 	_setUpListners = function (){
-	$('#add_form').on('click', _showModal);
-	$('#enter').on('click', _showModal); // открыть модальное окно
+	$('#add_form').on('click', _showModal);// открыть модальное окно
 	('#add_work_form').on('submit', _addProject); // добавление проекта
 },
 
@@ -29,9 +28,6 @@ _showModal = function (){
 _addProject = function (e){
 
 	e.preventDefault();
-		var form = $(this),
-			url = '/send_mail.php',
-			defObject = _ajaxForm(form, url);
 },
 
 _ajaxForm = function (form, url) {

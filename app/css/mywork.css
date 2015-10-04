@@ -30,9 +30,22 @@
 .my_work_item:last-child {
 	margin-top: 6px;
 }
+.wrap_more_info {
+	display: block;
+	position: relative;
+}
 
-.img_link img {
+.img_link {
+	display: block;
+}
+
+.img_work {
+	display: block;
 	width: 100%;
+}
+
+.wrap_more_info:hover .more_info {
+	display: block;
 }
 
 .site_work {
@@ -74,9 +87,28 @@
 		background: linear-gradient(#e5e4e4,#bebdbd);
 	}
 	.add_my_work:active {
-		box-shadow: inset 2px 2px 1px rgba(0,0,0,0.3),0 1px 0 rgba(0,0,0,0.1);
+		box-shadow: inset 2px 2px 1px rgba(0,0,0,.3),0 1px 0 rgba(0,0,0,.1);
 	}
 
+
+/*Вспливашка*/
+.more_info {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	background: rgba(0,0,0,0.3);
+	border-radius: 5px 5px 0 0;
+}
+
+.more_info_text {
+	display: block;
+	margin: 33% 0;
+	color: #fff;
+	font: 600 18px 'OpenSans-Semibold';
+
+}
 
 /*popup*/
 
@@ -105,6 +137,8 @@
 	right: 5px;
 	top: 7px;
 	cursor: pointer;
+	color: #727070;
+	font: 400 12px 'OpenSans-Regular';
 }
 
 .er_send {
@@ -183,6 +217,10 @@
 	border-radius: 5px;
 	margin: 13px 115px;
 	background: linear-gradient (#f9fafa,#e9e9e8);
+}
+
+.pop_window_close {
+	
 }
 
 
