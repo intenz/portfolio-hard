@@ -8,7 +8,7 @@
 	margin-top: -155px;
 	width: 254px;
 	background: linear-gradient(#fbfbfa,#f0eeed);
-	padding: 38px;
+	padding: 40px 37px;
 	border-radius: 5px;
 	border: 1px solid #c5c5c5;
 	box-shadow: 0 4px 15px rgba(0,0,0,0.4);
@@ -19,6 +19,7 @@
 	top: -20px;
 	left: 20px;
 	margin: 0;
+	letter-spacing: 1;
 	font: 300 12px 'OpenSans-Light';
 	color: #727070;
 }
@@ -26,7 +27,7 @@
 .enter_form input {
 	display: block;
 	width: 170px;
-	padding: 12px 10px 13px 70px;
+	padding: 12px 10px 12px 70px;
 	background: linear-gradient(#f7f8f9,#f4f3f3);
 	font: 300 12px 'OpenSans-Light';
 	line-height: 1;
@@ -38,12 +39,12 @@
 
 .enter_form input[type="text"] {
 	background: url(../img/sprite/enter_log.png) no-repeat 15px;
-	margin-bottom: 25px;
+	margin-bottom: 23px;
 }
 
 .enter_form input[type="password"] {
 	background: url(../img/sprite/enter_pass.png) no-repeat 15px;
-	margin-bottom: 18px;
+	margin-bottom: 14px;
 }
 
 .enter_form input[type="checkbox"] {

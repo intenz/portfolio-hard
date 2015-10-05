@@ -1,7 +1,11 @@
+.sec_my_info {
+	padding: 29px 42px 20px;
+}
+
 .reg {
 	display: block;
-	width: 400px;
-	margin: 0 auto;
+	width: 405px;
+	margin-left: 81px;
 	color: #727070;
 	font: 600 16px 'OpenSans-Regular';
 }
@@ -9,7 +13,7 @@
 .reg_text {
 	display: inline-block;
 	width: 190px;
-	margin: 0 0 12px 15px;
+	margin: 0 0 13px 17px;
 	
 }
 .reg_text:first-child {
@@ -17,14 +21,14 @@
 }
 
 .reg input[type="text"] {
-	width: 170px;
+	width: 175px;
 
 }
 
 .reg input[type="text"],
 .reg textarea {
-	margin-top: 7px;
-	padding: 10px 8px;
+	margin-top: 5px;
+	padding: 12px 8px;
 	color: #c7c6c6;
 	font-size: 12px;
 	font-weight: 300;
@@ -35,23 +39,24 @@
 }
 
 .reg_area {
-	margin: 0 0 10px 0;
+	display: block;
+	margin: 0 0 7px 0;
 }
 .reg textarea {
-	height: 160px;
-	width: 380px;
+	height: 156px;
+	width: 385px;
 	resize: none;
 }
 
 .wrap_kapcha {
 	display: block;
-	width: 400px; 
+	width: 405px; 
 }
 
 .wrap_kapcha .reg_text {
 	display: block;
 	width: 100%;
-	margin-bottom: 8px;
+	margin-bottom: 5px;
 }
 
 .wrap_kapcha img {
@@ -65,7 +70,8 @@
 }
 
 .reg_kapcha_text input[type="text"] {
-	margin: 20px 0 28px 14px;
+	margin: 21px 0 33px 18px;
+	padding: 7px;
 }
 
 
@@ -76,13 +82,13 @@
 
 .bnt-submit input[type="submit"] {
 	font-weight: 600;
-	margin-left: 26px;
+	margin-left: 28px;
 	padding: 8px 17px;
 	border-radius: 5px;
 }
 
 input[type="submit"]+input[type="submit"] {
-	margin-left: 95px;
+	margin-left: 93px;
 }
 
 @media screen and (max-width: 660px) {

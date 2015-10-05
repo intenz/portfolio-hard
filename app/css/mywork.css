@@ -8,10 +8,10 @@
 .my_work_item {
 	display: inline-block;
 	vertical-align: top;
-	width: 166px;
+	width: 165px;
 	background: #fff;
-	margin-left: 25px;
-	margin-bottom: 45px;
+	margin-left: 29px;
+	margin-bottom: 49px;
 	border: 1px solid #c5c5c5;
 	border-radius: 7px;
 	text-align: center;
@@ -27,9 +27,7 @@
 .my_work_item:first-child{
 	margin-left: 0;
 }
-.my_work_item:last-child {
-	margin-top: 6px;
-}
+
 .wrap_more_info {
 	display: block;
 	position: relative;
@@ -65,7 +63,7 @@
 
 .add_my_work {
 	display: block;
-	padding: 25px 20px;
+	padding: 24px 20px;
 	font: 600 14px 'OpenSans-Semibold';
 	color: #727070;
 	background: linear-gradient(#fdfcfc,#e9e8e8);
@@ -74,11 +72,11 @@
 .add_my_work:before {
 	content: '';
 	display: block;
-	width: 50px;
-	height: 50px;
-	margin: 0 0 15px 40px;
+	width: 54px;
+	height: 54px;
+	margin: 0 0 13px 38px;
 	background: #f7f7f7;
-	background: url(../img/sprite/sprite-work1.png) no-repeat;
+	background: url(../img/sprite/add_ic.png) no-repeat 18px 18px;
 	border-radius: 50%;
 	box-shadow: inset 2px 2px 1px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.8);
 }
@@ -104,7 +102,7 @@
 
 .more_info_text {
 	display: block;
-	margin: 33% 0;
+	margin: 27% 0;
 	color: #fff;
 	font: 600 18px 'OpenSans-Semibold';
 
@@ -115,8 +113,11 @@
 .pop_window {
 	display: none;
 	background: linear-gradient(#fbfbfa,#f0eeed);
-	width: 362px;
-	padding: 20px 15px;
+	width: 321px;
+	border: 1px solid #bfbfbf;
+	border-radius: 5px;
+	padding: 25px 20px;
+	box-shadow: 0 3px 3px rgba(0,0,0,.5)
 }
 
 .h_add_work {
@@ -126,28 +127,30 @@
 .h_add_text {
 	position: absolute;
 	top: -20px;
-	right: 20px;
+	left: 20px;
 	color: #f8f7f6;
+	letter-spacing: 1;
 	font: 300 12px 'OpenSans-Light';
 	margin: 0;
 }
 
 .pop_window_close {
 	position: absolute;
-	right: 5px;
-	top: 7px;
+	right: 7px;
+	top: 0px;
 	cursor: pointer;
 	color: #727070;
-	font: 400 12px 'OpenSans-Regular';
+	font: 18px 'OpenSans-Regular';
+	font-weight: bold;
 }
 
 .er_send {
-	display: none;
-	padding: 7px;
+	display: block;
+	padding: 4px 8px;
 	background: #e9c8bc;
 	border: 1px solid #cb6945;
 	color: #cb6945;
-	margin-bottom: 10px;
+	border-radius: 5px;
 }
 
 .er_send_into {
@@ -174,56 +177,90 @@
 .add_label {
 	font: 400 14px 'OpenSans-Regular';
 	display: block;
-	margin: 10px 0;
+	margin: 7px 0;
 	color: #727070;
 }
 .inputfield,
-.fileform,
 .url_input,
+.fileform,
 .inputarea {
-	width: 344px;
+	width: 302px;
+	background: linear-gradient(#fbf9f9,#f4f2f2);
 }
 
 .modal_form input[type="text"],
-.inputarea {
+.inputarea,
+#fileformlabel {
 	padding: 12px 8px;
 	color: #c7c6c6;
 	font: 300 12px 'OpenSans-Light';
 	border-radius: 5px;
 	border: 1px solid #d6d5d3;
 }
-
-.file_input {
-	width: 268px;
+#fileformlabel {
+	border: none;
+}
+.fileform { 
+	border: 1px solid #d6d5d3;
+	border-radius: 5px;
+	font: 300 12px 'OpenSans-Light';
+	color: #c7c6c6;
+	cursor: pointer;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+	text-align: left;
+	vertical-align: middle;
+	width: 320px;
 }
 
-.modal_form input[type="file"] {
-	float: right;
+.fileform #upload{
+	position:absolute; 
+	top:0; 
+	left:0; 
+	width:100%; 
+	-moz-opacity: 0; 
+	filter: alpha(opacity=0); 
+	opacity: 0; 
+	font-size: 150px; 
+	height: 30px;
+	z-index:20;
+}
+
+.fileform #fileformlabel { 
+background: linear-gradient(#fbf9f9,#f4f2f2);
+float: left;
+height: 40px;
+overflow: hidden;
+text-align: left;
+vertical-align: middle;
+width: 315px;
+}
+.fileform #fileformlabel:before {
+	position: relative;
+	top: -13px;
+	left: -6px;
+	content: '';
+	background: linear-gradinet(#fcfbfa,#e5e3e2);
+	border-left: 1px solid #cecdcd;
 	width: 50px;
 	height: 40px;
-	background: url(../img/sprite/file_add.png) no-repeat;
-	background: linear-gradient(#f9fafa,#e9e9e8);
+	float: right;
+	background: url(../img/sprite/file_add.png) no-repeat 14px;
 }
 
+
 .inputarea {
-	height: 112px;
+	height: 85px;
 	resize: none;
 }
 
-.modal_form input[type="submit"] {
+.submit_add {
 	font: 400 14px 'OpenSans-Regular';
-	padding: 13px 25px;
-	border: 1px solid #d2d2d2;
+	padding: 9px 36px;
 	border-radius: 5px;
-	margin: 13px 115px;
-	background: linear-gradient (#f9fafa,#e9e9e8);
+	margin: 10px 89px 2px;
 }
-
-.pop_window_close {
-	
-}
-
-
 
 
 

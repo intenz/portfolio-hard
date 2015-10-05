@@ -164,26 +164,31 @@
 <div class="pop_window" id="element_to_pop_up">
 			<div class="h_add_work">
 				<p class="h_add_text">
-					Добавление проекта
+					Додавання проекту
 				</p>
 				<div class="pop_window_close b-close">x</div>
 			</div>
 			<div class="er_send">
-				<h2 class="er_send_into">Ошибка!</h2>
-				<p class="er_send_pr">Невозможно добавить проект</p>
+				<h2 class="er_send_into">Помилка!</h2>
+				<p class="er_send_pr">Неможливо додати проект</p>
 			</div>
 			<div class="modal_form">
 				<form action="#" id="add_work_form" class="form_add">
-					<label for="nameProject" class="add_label">Название проекта</label>
-					<input type="text" name="nameProject" id="nameProject" class="inputfield" placeholder="Введите название" qtip-content="Вы не ввели название">
-					<label for="" class="add_label">Картинка проекта</label>
-					<input type="text" class="file_input" placeholder="Загрузите изображение">
-					<input type="file" name="file">
-					<label class="add_label">URL проекта</label>
+					<label for="nameProject" class="add_label">Назва проекту</label>
+					<input type="text" name="nameProject" id="nameProject" class="inputfield" placeholder="Введіть назву" qtip-content="Вы не ввели название">
+					<label for="" class="add_label">Картинка проекту</label>
+
+					<div class="fileform">
+					<div id="fileformlabel">завантажте зображення</div>
+					<input type="file" name="upload" id="upload" onchange="getName(this.value);" />
+					</div>
+
+
+					<label class="add_label">URL проекту</label>
 					<input type="text" class="url_input" placeholder="Добавити ссилку">
-					<label for="leterProject" class="add_label">Описание</label>
-					<textarea name="leterProject" placeholder="Пара слов о Вашем проекте" class = "inputarea" qtip-content="Вы не ввели описание"></textarea>	
-					<input type = 'submit' class="submit_add" id = "Submit" value ="Добавить">
+					<label for="leterProject" class="add_label">Додати посилання</label>
+					<textarea name="leterProject" placeholder="Пара слів про Ваш проект" class = "inputarea"></textarea>	
+					<input type = 'submit' class="submit_add" id = "Submit" value ="Додати">
 				</form>
 			</div>
 </div>
