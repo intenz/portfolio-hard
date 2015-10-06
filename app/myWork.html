@@ -19,6 +19,7 @@
  <link href="css/main.css" rel="stylesheet">
  <link rel="stylesheet" href="css/mywork.css">
  <!-- JS -->
+ <script src="bower/modernizr/modernizr.js"></script>
 </head>
 <body>
 	<!--[if lt IE 8]>
@@ -98,32 +99,26 @@
 				<ul class="my_work_wrap">
 					<li class="my_work_item">
 					<div class="wrap_more_info">
-						<a class="img_link" href="#">
+						<div class="img_link">
 							<img class="img_work" src="img\my_work\work-1.png" alt="work">
-						</a>
-							<div class="more_info">
+						</div>
 								<a href="#" class="more_info_text">Подивитись</a>
-							</div>
 						</div>
 						<a href="#" class="site_work">a-industry.ru</a>
 						<p class="site_describe">Корпоративний і в теж час продає сайт будівельної компанії</p>
 					</li>
 					<li class="my_work_item">
 					<div class="wrap_more_info">
-						<a class="img_link" href="#"><img class="img_work" src="img\my_work\work-2.png" alt="work"></a>
-						<div class="more_info">
+						<div class="img_link"><img class="img_work" src="img\my_work\work-2.png" alt="work"></div>
 								<a href="#" class="more_info_text">Подивитись</a>
-							</div>
 					</div>
 						<a href="#" class="site_work">домгазобетон.рф</a>
 						<p class="site_describe">Продає сторінка для компанії ledenland.</p>
 					</li>
 					<li class="my_work_item">
 					<div class="wrap_more_info">
-						<a class="img_link" href="#"><img class="img_work" src="img\my_work\work-3.png" alt="work"></a>
-						<div class="more_info">
+						<div class="img_link"><img class="img_work" src="img\my_work\work-3.png" alt="work"></div>
 								<a href="#" class="more_info_text">Подивитись</a>
-							</div>
 						</div>
 						<a href="#" class="site_work">crmconsulting.biz</a>
 						<p class="site_describe">Лендінг компанії «СRM Consulting» спеціалізується на точній 
@@ -131,20 +126,16 @@
 					</li>
 					<li class="my_work_item">
 					<div class="wrap_more_info">
-						<a class="img_link" href="#"><img class="img_work" src="img\my_work\work-4.png" alt="work"></a>
-						<div class="more_info">
+						<div class="img_link"><img class="img_work" src="img\my_work\work-4.png" alt="work"></div>
 								<a href="#" class="more_info_text">Подивитись</a>
-							</div>
 						</div>
 						<a href="#" class="site_work">landingsloft.ru</a>
 						<p class="site_describe">Сайт по послугах розробки продають Лендінзі.</p>
 					</li>
 					<li class="my_work_item">
 					<div class="wrap_more_info">
-						<a class="img_link" href="#"><img class="img_work" src="img\my_work\work-5.png" alt="work"></a>
-						<div class="more_info">
+						<div class="img_link"><img class="img_work" src="img\my_work\work-5.png" alt="work"></div>
 								<a href="#" class="more_info_text">Подивитись</a>
-							</div>
 						</div>
 						<a href="#" class="site_work">yasnow.biz</a>
 						<p class="site_describe">Landing page по продажу франшизи снігового бізнесу.</p>
@@ -173,13 +164,13 @@
 				<p class="er_send_pr">Неможливо додати проект</p>
 			</div>
 			<div class="modal_form">
-				<form action="#" id="add_work_form" class="form_add">
+				<form action="POST" id="add_work_form" class="form_add">
 					<label for="nameProject" class="add_label">Назва проекту</label>
 					<input type="text" name="nameProject" id="nameProject" class="inputfield" placeholder="Введіть назву" qtip-content="Вы не ввели название">
 					<label for="" class="add_label">Картинка проекту</label>
 
 					<div class="fileform">
-					<div id="fileformlabel">завантажте зображення</div>
+					<div id="fileformlabel">Завантажте зображення</div>
 					<input type="file" name="upload" id="upload" onchange="getName(this.value);" />
 					</div>
 

@@ -7,8 +7,14 @@ $(document).ready(function() {
 	});
 });
 
+//placeholder 
+$(document).ready(function() {
+	if(!Modernizr.input.placeholder){
+		$('input,textarea').placeholder();
+	}
+});
 
-// popup
+//popup
 var myWork = (function (){
 
 var init = function(){
@@ -21,6 +27,8 @@ var init = function(){
 
 _showModal = function (){
 		$('#element_to_pop_up').bPopup({
+			speed: 650,
+			transition: 'slideDown',
 			onClose: function () {
 	this.find('.form').trigger("reset"); // сбрасываем форму
 }
@@ -28,7 +36,6 @@ _showModal = function (){
 	},
 
 _addProject = function (e){
-
 	e.preventDefault();
 },
 
@@ -47,17 +54,18 @@ return {
 })();
 
 myWork.init();
-jQuery('input[placeholder], textarea[placeholder]').placeholder();
+
+
 
 // file-load
 function getName (str){
 	if (str.lastIndexOf('\\')){
-	    var i = str.lastIndexOf('\\')+1;
+		var i = str.lastIndexOf('\\')+1;
 	}
 	else{
-	    var i = str.lastIndexOf('/')+1;
-	}						
-	var filename = str.slice(i);			
+		var i = str.lastIndexOf('/')+1;
+	}
+	var filename = str.slice(i);
 	var uploaded = document.getElementById("fileformlabel");
 	uploaded.innerHTML = filename;
 }
