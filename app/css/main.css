@@ -668,6 +668,7 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	.nav_menu.active {
 		display: block;
 		margin-bottom: 0;
+		z-index: 2;
 	}
 	
 	.t_main_info {

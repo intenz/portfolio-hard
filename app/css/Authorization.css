@@ -81,3 +81,8 @@ input[type="checkbox"]:checked + label::before {
 	width: 150px;
 	margin: 0 auto;
 }
+
+@media screen and (max-width: 680px) {
+	.enter {
+	margin-left: -165px;
+	}
