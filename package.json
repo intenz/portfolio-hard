@@ -3,5 +3,9 @@
   "devDependencies": {
     "browser-sync": "latest",
     "gulp": "latest"
+  },
+  "dependencies": {
+    "bower": "^1.5.3"
+    
   }
 }

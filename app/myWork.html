@@ -19,14 +19,14 @@
  <link href="css/main.css" rel="stylesheet">
  <link rel="stylesheet" href="css/mywork.css">
  <!-- JS -->
- <script src="bower/modernizr/modernizr.js"></script>
+ <script src="bower/modernizer/modernizr.js"></script>
 </head>
 <body>
 	<!--[if lt IE 8]>
 	 <p class="browsehappy">Ваш браузер <strong>устарел</strong>.
 	Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
 	 <![endif]-->
-<div class="wrapper">
+<div class="wrapper clearfix">
 	 <!-- HEADER -->
 	<header class="header clearfix">
 		<div class="container">
@@ -67,10 +67,10 @@
 						<a href="index.html" class="t_info_page">Про мене</a>
 					</li>
 					<li class="menu_link">
-						<a href="myWork.html" class="t_info_page active">Мої Роботи</a>
+						<a href="myWork.html" class="t_info_page active">Мої роботи</a>
 					</li>
 					<li class="menu_link">
-						<a href="feedback.html" class="t_info_page">Обратній звязок</a>
+						<a href="feedback.html" class="t_info_page">Зворотній зв'язок</a>
 					</li>
 				</ul>
 			</div>
@@ -102,46 +102,46 @@
 						<div class="img_link">
 							<img class="img_work" src="img\my_work\work-1.png" alt="work">
 						</div>
-								<a href="#" class="more_info_text">Подивитись</a>
+								<a href="http://a-industry.ru" class="more_info_text" target="_blank">Подивитися</a>
 						</div>
-						<a href="#" class="site_work">a-industry.ru</a>
+						<a href="http://a-industry.ru" class="site_work" target="_blank">a-industry.ru</a>
 						<p class="site_describe">Корпоративний і в теж час продає сайт будівельної компанії</p>
 					</li>
 					<li class="my_work_item">
 					<div class="wrap_more_info">
 						<div class="img_link"><img class="img_work" src="img\my_work\work-2.png" alt="work"></div>
-								<a href="#" class="more_info_text">Подивитись</a>
+								<a href="http://домгазобетон.рф" class="more_info_text" target="_blank">Подивитися</a>
 					</div>
-						<a href="#" class="site_work">домгазобетон.рф</a>
+						<a href="http://домгазобетон.рф" class="site_work" target="_blank">домгазобетон.рф</a>
 						<p class="site_describe">Продає сторінка для компанії ledenland.</p>
 					</li>
 					<li class="my_work_item">
 					<div class="wrap_more_info">
 						<div class="img_link"><img class="img_work" src="img\my_work\work-3.png" alt="work"></div>
-								<a href="#" class="more_info_text">Подивитись</a>
+								<a href="http://crmconsulting.biz" class="more_info_text" target="_blank">Подивитися</a>
 						</div>
-						<a href="#" class="site_work">crmconsulting.biz</a>
-						<p class="site_describe">Лендінг компанії «СRM Consulting» спеціалізується на точній 
+						<a href="http://crmconsulting.biz" class="site_work" target="_blank">crmconsulting.biz</a>
+						<p class="site_describe">Лендінг компанії «СRM Consulting» спеціалізується по точній 
 						настройці Бітрікс24 під бізнес.</p>
 					</li>
 					<li class="my_work_item">
 					<div class="wrap_more_info">
 						<div class="img_link"><img class="img_work" src="img\my_work\work-4.png" alt="work"></div>
-								<a href="#" class="more_info_text">Подивитись</a>
+								<a href="http://landingsloft.ru" class="more_info_text" target="_blank">Подивитися</a>
 						</div>
-						<a href="#" class="site_work">landingsloft.ru</a>
+						<a href="http://landingsloft.ru" class="site_work" target="_blank">landingsloft.ru</a>
 						<p class="site_describe">Сайт по послугах розробки продають Лендінзі.</p>
 					</li>
 					<li class="my_work_item">
 					<div class="wrap_more_info">
 						<div class="img_link"><img class="img_work" src="img\my_work\work-5.png" alt="work"></div>
-								<a href="#" class="more_info_text">Подивитись</a>
+								<a href="http://yasnow.biz" class="more_info_text" target="_blank">Подивитися</a>
 						</div>
-						<a href="#" class="site_work">yasnow.biz</a>
+						<a href="app/index.html" class="site_work" target="_blank">yasnow.biz</a>
 						<p class="site_describe">Landing page по продажу франшизи снігового бізнесу.</p>
 					</li>
-					<li class="my_work_item" id="add_form">
-						<a href="#" class="add_my_work">Додоти проект</a>
+					<li class="my_work_item" >
+						<a href="#" class="add_my_work" id="add_form">Додати проект</a>
 						</li>
 					</ul>
 				</div>
@@ -163,22 +163,25 @@
 				<h2 class="er_send_into">Помилка!</h2>
 				<p class="er_send_pr">Неможливо додати проект</p>
 			</div>
+			<div class="succes">
+				<h2 class="succes_into">Ура!</h2>
+				<p class="succes_pr">Проект успішно додано.</p>
+			</div>
 			<div class="modal_form">
 				<form action="POST" id="add_work_form" class="form_add">
-					<label for="nameProject" class="add_label">Назва проекту</label>
-					<input type="text" name="nameProject" id="nameProject" class="inputfield" placeholder="Введіть назву" qtip-content="Вы не ввели название">
-					<label for="" class="add_label">Картинка проекту</label>
-
+					<label class="add_label">Назва проекту
+					<input type="text" class="inputfield" placeholder="Введіть назву" qtip-position="right" qtip-content="Напишіть пароль" id="name"></label>
+					<label class="add_label">Картинка проекту
 					<div class="fileform">
-					<div id="fileformlabel">Завантажте зображення</div>
+					<div id="fileformlabel">Завантажити зображення</div>
 					<input type="file" name="upload" id="upload" onchange="getName(this.value);" />
-					</div>
-
-
-					<label class="add_label">URL проекту</label>
-					<input type="text" class="url_input" placeholder="Добавити ссилку">
-					<label for="leterProject" class="add_label">Додати посилання</label>
-					<textarea name="leterProject" placeholder="Пара слів про Ваш проект" class = "inputarea"></textarea>	
+					</div></label>
+					<label class="add_label">URL проекту
+					<input type="url" class="url_input" placeholder="Додати посилання" qtip-position="right" qtip-content="Напишіть пароль" id="Url">
+					</label>
+					<label class="add_label">Додати посилання
+					<textarea class = "inputarea" placeholder="Декілька слів про Ваш проект" qtip-position="right" qtip-content="Напишіть пароль" id="name" class="input"></textarea>
+					</label>
 					<input type = 'submit' class="submit_add" id = "Submit" value ="Додати">
 				</form>
 			</div>
@@ -197,6 +200,8 @@
 <!-- Js -->
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="bower/bPopup/jquery.bpopup.js"></script>
+	<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+	<script src="bower/qtip2/jquery.qtip.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

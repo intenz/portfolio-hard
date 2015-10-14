@@ -1,3 +1,4 @@
+
 /*enter*/
 .enter {
 	display: block;
@@ -7,6 +8,7 @@
 	margin-left: -196px;
 	margin-top: -155px;
 	width: 254px;
+	background: white;/*   background для іе*/
 	background: linear-gradient(#fbfbfa,#f0eeed);
 	padding: 40px 37px;
 	border-radius: 5px;
@@ -37,7 +39,7 @@
 	
 }
 
-.enter_form input[type="text"] {
+.enter_form input[type="email"] {
 	background: url(../img/sprite/enter_log.png) no-repeat 15px;
 	margin-bottom: 23px;
 }

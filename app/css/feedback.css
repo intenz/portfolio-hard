@@ -5,25 +5,25 @@
 .reg {
 	display: block;
 	width: 405px;
-	margin-left: 81px;
+	margin: 0 auto;
 	color: #727070;
-	font: 600 16px 'OpenSans-Regular';
+	font: 400 16px 'OpenSans-Regular';
 }
 
 .reg_text {
 	display: inline-block;
 	width: 190px;
 	margin: 0 0 13px 17px;
-	
 }
+
 .reg_text:first-child {
 	margin: 0;
 }
 
 .reg input[type="text"] {
 	width: 175px;
-
 }
+
 
 .reg input[type="text"],
 .reg textarea {
@@ -35,7 +35,6 @@
 	border: 1px solid #d6d5d3;
 	border-radius: 3px;
 	background: linear-gradient(#fbfcfd,#f4f3f4);
-	
 }
 
 .reg_area {
@@ -56,24 +55,18 @@
 .wrap_kapcha .reg_text {
 	display: block;
 	width: 100%;
-	margin-bottom: 5px;
+	margin-bottom: 33px;
 }
 
-.wrap_kapcha img {
-	/*display: inline-block;*/
-	float: left;
-}
-
-.reg_kapcha_text {
-	display: inline-block;
-	margin: 0;
-}
-
-.reg_kapcha_text input[type="text"] {
-	margin: 21px 0 33px 18px;
+.wrap_kapcha input[type="text"] {
+	margin: 26px 0 0 20px;
 	padding: 7px;
 }
 
+.wrap_kapcha img {
+	float: left;
+	margin-top: 4px;
+}
 
 .bnt-submit {
 	display: block;
@@ -82,16 +75,18 @@
 
 .bnt-submit input[type="submit"] {
 	font-weight: 600;
-	margin-left: 28px;
-	padding: 8px 17px;
+	margin-left: 30px;
+	padding: 7px 16px;
 	border-radius: 5px;
 }
 
-input[type="submit"]+input[type="submit"] {
-	margin-left: 93px;
+input[type="reset"] {
+	margin-left: 94px;
+	padding: 7px 23px;
+	border-radius: 5px;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 680px) {
 	.reg {
 		max-width: 280px;
 		text-align: left;
@@ -127,15 +122,35 @@ input[type="submit"]+input[type="submit"] {
 		margin-top: 12px;
 	}
 	.bnt-submit input[type="submit"] {
-		width: 115px;
 		padding: 10px 5px;
 	}
 	.bnt-submit input[type="submit"] {
 		margin-left: 5px;
 	}
-	input[type="submit"]+input[type="submit"] {
+	input[type="reset"] {
 	margin-left: 15px;
+	}
 }
 
+@media screen and (max-width: 450px) {
+	.sec_my_info {
+		padding: 29px 25px 20px;
+	}
+	.reg {
+		max-width: 250px;
+	}
 
+	.wrap_kapcha img {
+		width: 110px;
+	}
+
+	.bnt-submit input[type="submit"] {
+		font-size: 14px;
+		padding: 11px 10px;
+	}
+	input[type="reset"] {
+		font-size: 14px;
+		margin-left: 25px;
+		padding: 11px 10px;
+	}
 }

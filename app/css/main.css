@@ -28,6 +28,7 @@ a, a:hover {text-decoration: none;}
 
 .wrapper {
 	min-height:100%;
+	margin-bottom: 66px;
 }
 
 .container {
@@ -64,7 +65,7 @@ a, a:hover {text-decoration: none;}
 .social_ul {
 	display: block;
 	list-style: none;
-	margin-right: 10px;
+	margin-right: 8px;
 }
 
 
@@ -86,7 +87,7 @@ a, a:hover {text-decoration: none;}
 }
 
 .social_link {
-	margin-left: 10px;
+	margin-left: 12px;
 }
 .social_item {
 	display: block;
@@ -240,7 +241,8 @@ a, a:hover {text-decoration: none;}
 
 .t_info_page,
 .bnt-submit input[type="submit"],
-.submit_add {
+.submit_add,
+.link-res {
 	color: #727070;
 	border: 1px solid #c3c3c3;
 	background: #edeceb;/*   background для іе*/
@@ -253,7 +255,8 @@ a, a:hover {text-decoration: none;}
 
 .t_info_page:hover,
 .bnt-submit input[type="submit"]:hover,
-.submit_add:hover {
+.submit_add:hover,
+.link-res:hover {
 	background: #cbcaca;/*   background для іе*/
 	background: -webkit-linear-gradient(#e2e0e0,#bebdbd);
 	background: -ms-linear-gradient(#e2e0e0,#bebdbd);
@@ -264,7 +267,8 @@ a, a:hover {text-decoration: none;}
 
 .t_info_page:active,
 .bnt-submit input[type="submit"]:active,
-.submit_add:active {
+.submit_add:active,
+.link-res:active {
 	border: 1px solid #636363;
 	color: #eeedec;
 	text-shadow: 0 1px 1px #000;
@@ -400,9 +404,9 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	margin-right: 10px;
 }
 
-.main_info:last-child {
+/*.main_info:last-child {
 	margin-bottom: 100px;
-}
+}*/
 
 .t_main_info {
 	margin: 0;
@@ -804,10 +808,6 @@ background: -webkit-linear-gradient(#fbfbfb,#eee5d0);
 	.nav_hr {
 		height: 3px;
 	}
-
-/*	.logo {
-		margin: 0;
-	}*/
 
 	.social_link:first-child {
 		margin: 0px;

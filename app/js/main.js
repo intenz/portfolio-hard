@@ -5,56 +5,92 @@ $(document).ready(function() {
 		$(this).toggleClass('active');
 		$('.nav_menu').toggleClass('active');
 	});
-});
 
-//placeholder 
-$(document).ready(function() {
-	if(!Modernizr.input.placeholder){
-		$('input,textarea').placeholder();
+// placeholder
+if(!Modernizr.input.placeholder){
+		$('input, textarea').placeholder();
 	}
 });
 
-//popup
-var myWork = (function (){
 
-var init = function(){
+
+
+// Объявление модуля
+var myModule = (function () {
+
+	// Инициализирует наш модуль
+	var init = function () {
 		_setUpListners();
-	},
-	_setUpListners = function (){
-	$('#add_form').on('click', _showModal);// открыть модальное окно
-	('#add_work_form').on('submit', _addProject); // добавление проекта
-},
+	};
 
-_showModal = function (){
-		$('#element_to_pop_up').bPopup({
+	// Прослушивает события 
+	var _setUpListners = function () {
+		$('#add_form').on('click', _showModal);
+		$('#add_work_form').on('submit', _addProject);
+	};
+
+	var _showModal = function (e) {
+		e.preventDefault();
+		var divPopup = $('#element_to_pop_up'),
+			form = divPopup.find('.form');
+		divPopup.bPopup({
+
 			speed: 650,
 			transition: 'slideDown',
 			onClose: function () {
-	this.find('.form').trigger("reset"); // сбрасываем форму
-}
+				this.find('succes').text('').hide();
+				form.trigger('reset');
+				}
 		});
-	},
+	};
+	var _addProject = function (e) {
+		console.log('add project');
+		e.preventDefault();
 
-_addProject = function (e){
-	e.preventDefault();
-},
+		var form = $(this),
+		url = 'add_project.php',
+		defObj = _ajaxForm( form, url);
+		
+		if(defObj){
+			defObj.done(function(ans) {
+				console.log("ans");
+				var succesbox = form.find('succes'),
+				errorbox = form.find('er_send');
+				if(ans.status === 'OK'){
+					succesbox.text(ans.text).show();
+					errorbox.hide();
+				}else{
+					errorbox.text(ans.text).show();
+				}
+			});
+		}
+	};
 
-_ajaxForm = function (form, url) {
+	var _ajaxForm = function (fomr, url) {
+		data = form.serialize();
 
-	if (!validation.validateForm(form)) return false;  
-	var data = form.serialize();
+		var result=$.ajax({
+			url: url,
+			type: 'POST',
+			dataType: 'json',
+			data: data,
+	}).fail (function(ans){
+		console.log('problem');
+		form.find('er_send').text('na serveri prob').show();
+	});
 
+		return result;
+	};
 
-};
-
-return {
+	// Возвращаем объект (публичные методы) 
+	return {
 		init: init
-};
+	};
 
 })();
 
-myWork.init();
-
+// Вызов модуля
+myModule.init();
 
 
 // file-load

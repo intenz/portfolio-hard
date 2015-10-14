@@ -4,6 +4,7 @@ var gulp = require("gulp"),
 gulp.task('server', function (){
 	browserSync({
 		port:9000,
+		tunnel: "test",
 		server: {
 			baseDir: 'app'
 		}

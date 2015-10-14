@@ -14,12 +14,14 @@
   <!-- favicon -->
  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
  <!-- CSS -->
+ <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
  <link href="bower/normalize-css/normalize.css" rel="stylesheet">
+ <link rel="stylesheet" href="css/qtip.css">
  <link rel="stylesheet" href="fons/stylesheet.css">
  <link href="css/main.css" rel="stylesheet">
  <link rel="stylesheet" href="css/feedback.css">
  <!-- JS -->
- <script src="bower/modernizr/modernizr.js"></script>
+ <script src="bower/modernizer/modernizr.js"></script>
 </head>
 <body>
 	<!--[if lt IE 8]>
@@ -67,10 +69,10 @@
 						<a href="index.html" class="t_info_page">Про мене</a>
 					</li>
 					<li class="menu_link">
-						<a href="myWork.html" class="t_info_page">Мої Роботи</a>
+						<a href="myWork.html" class="t_info_page">Мої роботи</a>
 					</li>
 					<li class="menu_link">
-						<a href="feedback.html" class="t_info_page active">Обратній звязок</a>
+						<a href="feedback.html" class="t_info_page active">Зворотній зв'язок</a>
 					</li>
 				</ul>
 			</div>
@@ -93,28 +95,29 @@
 
 		<!-- FEEDBACK -->
 		<section class="main_info clearfix">
-			<h2 class="t_main_info">У вас цікавий проект? Напиши мені</h2>
+			<h2 class="t_main_info">У вас є цікавий проект? Напишіть мені</h2>
 			<div class="sec_my_info">
-				<form action="#" class="reg clearfix">
-					<lable class="reg_text">Імя
-					<input type="text" placeholder="Як до вас звертатись">
-					</lable>
-					<lable class="reg_text">Email
-					<input type="text" placeholder="Куди мені писати">
-					</lable>
-					<lable class="reg_area">Сообщениє
-						<textarea placeholder="Коротко в чому суть"></textarea>
-					</lable>
+				<form action="#" class="reg clearfix" id="contact-me">
+					<label class="reg_text">Ім'я
+					<input type="text" placeholder="Як до вас звертатися" qtip-position="left" qtip-content="Напишіть Ім'я" id="name" class="input">
+					</label>
+
+					<label class="reg_text">Email
+					<input type="text" placeholder="Куди мені писати"  qtip-position="right" qtip-content="Напишіть email" id="email" class="input">
+					</label>
+					<label class="reg_area">Повідомлення
+						<textarea placeholder="Коротко, в чому суть"  qtip-position="left" qtip-content="Ваше питання" id="massage" class="textarea"></textarea>
+					</label>
 
 					<div class="wrap_kapcha">
-					<lable class="reg_text">Введіть код, показань на картинці</lable>
-					<img src="img/my_work/kapcha.png" alt="kapcha">
-					<lable class="reg_kapcha_text">
-					<input type="text" placeholder="Введіть код">
+						<label class="reg_text">Введіть код, показаний на картинці
+						<input class="kapcha_in" type="text" placeholder="Введіть код" qtip-position="right" qtip-content="код капчі" id="kapch">
+						<img src="img/my_work/kapcha.png" alt="kapcha">
+						</label>
 					</div>
 					<div class="bnt-submit">
 						<input type="submit" class="link-sub active" value="Відправити">
-						<input type="submit" class="link-sub" value="Очистити">
+						<input type="reset" class="link-res" value="Очистити">
 					</div>
 				</form>
 			</div>
@@ -133,6 +136,10 @@
 </footer>
 <!-- Js -->
 	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/contactMe.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
