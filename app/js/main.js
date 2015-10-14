@@ -39,7 +39,7 @@ var myModule = (function () {
 			transition: 'slideDown',
 			onClose: function () {
 				this.find('succes').text('').hide();
-				form.trigger('reset');
+				this.find('form').trigger('reset');
 				}
 		});
 	};
@@ -54,22 +54,25 @@ var myModule = (function () {
 		if(defObj){
 			defObj.done(function(ans) {
 				console.log("ans");
-				var succesbox = form.find('succes'),
-				errorbox = form.find('er_send');
+				var succesBox = form.find('succes'),
+						errorBox = form.find('er_send');
 				if(ans.status === 'OK'){
-					succesbox.text(ans.text).show();
-					errorbox.hide();
+					errorBox.hide();
+					succesBox.text(ans.text).show();
 				}else{
-					errorbox.text(ans.text).show();
+					errorBox.hide();
+					errorBox.text(ans.text).show();
 				}
 			});
 		}
 	};
 
-	var _ajaxForm = function (fomr, url) {
-		data = form.serialize();
+	var _ajaxForm = function (form, url) {
+		if(!validation.validateForm(form)) return false;
 
-		var result=$.ajax({
+		var data = form.serialize();
+
+		var result= $.ajax({
 			url: url,
 			type: 'POST',
 			dataType: 'json',

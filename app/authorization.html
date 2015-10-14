@@ -15,6 +15,8 @@
  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
  <!-- CSS -->
  <link href="bower/normalize-css/normalize.css" rel="stylesheet">
+ <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
+ <link rel="stylesheet" href="css/qtip.css">
  <link rel="stylesheet" href="fons/stylesheet.css">
  <link href="css/main.css" rel="stylesheet">
  <link rel="stylesheet" href="css/Authorization.css">
@@ -28,7 +30,7 @@
 <div class="enter">
 			<h2 class="h_enter">Авторизируйтеся</h2>
 			<div class="enter_form">
-				<form action="#" class="form_add">
+				<form action="#" class="form_add" id="form_author">
 					<input type="email" placeholder="Введіть Email" qtip-position="right" qtip-content="Напишіть email" id="name" class="input">
 					<input type="password" class="file_input" placeholder="Введіть пароль" qtip-position="right" qtip-content="Напишіть пароль" id="name" class="input">
 
@@ -51,7 +53,9 @@
 	<!-- Js -->
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
-	<script src="bower/qtip2/jquery.qtip.min.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/authorization.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

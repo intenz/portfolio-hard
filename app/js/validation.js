@@ -4,8 +4,19 @@ var validation = (function(){
 	};
 
 	var _setUpListners = function () {
-
+		$('form').on('keydown', 'input, textarea', _removeError);
+		$('form').on('reset', _clearForm);
 	};
+
+	var _removeError = function (){
+		$(this).removeClass('has-error');
+	};
+
+	var _clearForm = function (form) {
+		var form = $(this);
+		form.find('input,textarea').trigger('hideTooltip').removeClass('has-error');
+	};
+
 	var _createQtip = function(element) {	
 		position = element.attr('qtip-position');
 		console.log(position);
@@ -16,7 +27,7 @@ var validation = (function(){
 			};
 		}else{
 			position = {
-				my: 'right cetner',
+				my: 'right center',
 				at: 'left center',
 				adjust: {
 					method: 'shift none'
@@ -49,13 +60,14 @@ var validateForm = function(form) {
 	var elements = form.find('input, textarea').not('input[type="file"], input[type="hidden"]'),
 	valid = true;
 
-	$.each(elements, function(index, val){
+	$.each(elements, function (index, val){
 		var element = $(val),
 		val= element.val(),
 		pos = element.attr('qtip-position');
 		// console.log(pos);
 
 		if(val.length === 0){
+			element.addClass('has-error');
 			_createQtip(element, pos);
 			valid = false;
 		}

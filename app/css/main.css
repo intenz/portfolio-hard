@@ -202,9 +202,9 @@ a, a:hover {text-decoration: none;}
 .bnt-submit input[type="submit"].active,
 .enter_form input[type="submit"] {
 	border: 1px solid #2fa185;
-	color: #eeedec;
+	color: #1e7465;
 	background: #4fc4a7;/*   background для іе*/
-	text-shadow: 0 1px 1px #000;
+	text-shadow: 0 1px 1px rgba(255,255,255,.4);
 	background: -webkit-linear-gradient(#a5e7cb,#74b797);
 	background: -ms-linear-gradient(#a5e7cb,#74b797);
 	background: -moz-linear-gradient(#a5e7cb,#74b797);

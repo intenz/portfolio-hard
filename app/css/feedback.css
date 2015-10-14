@@ -20,12 +20,14 @@
 	margin: 0;
 }
 
-.reg input[type="text"] {
+.reg input[type="text"],
+.reg input[type="email"] {
 	width: 175px;
 }
 
 
 .reg input[type="text"],
+.reg input[type="email"],
 .reg textarea {
 	margin-top: 5px;
 	padding: 12px 8px;
@@ -79,6 +81,8 @@
 	padding: 7px 16px;
 	border-radius: 5px;
 }
+
+
 
 input[type="reset"] {
 	margin-left: 94px;

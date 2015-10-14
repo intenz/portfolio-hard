@@ -78,7 +78,8 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .enter_form input[type="submit"] {
-	padding: 12px 10px;
+	font: 600 14px/22px 'OpenSans-Semibold';
+	padding: 7px 10px;
 	text-align: center;
 	width: 150px;
 	margin: 0 auto;
