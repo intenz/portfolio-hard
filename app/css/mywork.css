@@ -217,7 +217,7 @@
 }
 
 .succes{
-	display: block;
+	display: none;
 	background: #bce1cb;
 	border: 1px solid #49bb7b;
 	color: #49bb7b;

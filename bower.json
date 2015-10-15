@@ -2,11 +2,11 @@
   "name": "dz1",
   "dependencies": {
     "bPopup": "bpopup#~0.11.0",
-    "jquery": "~2.1.4",
     "jquery-placeholder": "~2.1.3",
     "modernizer": "~2.8.2",
     "normalize-css": "normalize.css#~3.0.3",
     "modernizr": "~3.1.0",
-    "qtip2": "~2.2.1"
+    "qtip2": "~2.2.1",
+    "jquery": "1.9.1"
   }
 }

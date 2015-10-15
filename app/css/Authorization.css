@@ -39,12 +39,14 @@
 	
 }
 
-.enter_form input[type="email"] {
+.enter_form input[type="email"],
+#email_autoriz {
 	background: url(../img/sprite/enter_log.png) no-repeat 15px;
 	margin-bottom: 23px;
 }
 
-.enter_form input[type="password"] {
+.enter_form input[type="password"],
+#password_autoriz {
 	background: url(../img/sprite/enter_pass.png) no-repeat 15px;
 	margin-bottom: 14px;
 }

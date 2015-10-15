@@ -5,13 +5,14 @@ $(document).ready(function() {
 		$(this).toggleClass('active');
 		$('.nav_menu').toggleClass('active');
 	});
-
-// placeholder
-if(!Modernizr.input.placeholder){
-		$('input, textarea').placeholder();
-	}
 });
 
+// placeholder
+jQuery(document).ready(function($) {
+	if (!Modernizr.input.placeholder){
+		$('input,textarea').placeholder();
+	}
+});
 
 
 
