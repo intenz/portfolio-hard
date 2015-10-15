@@ -17,9 +17,9 @@
   <link rel="stylesheet" href="fons/stylesheet.css">
  <link href="bower/normalize-css/normalize.css" rel="stylesheet">
  <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
- <link rel="stylesheet" href="css/qtip.css">
  <link href="css/main.css" rel="stylesheet">
  <link rel="stylesheet" href="css/mywork.css">
+ <link rel="stylesheet" href="css/qtip.css">
  <!-- JS -->
  <script src="bower/modernizer/modernizr.js"></script>
 </head>
@@ -174,9 +174,9 @@
 					<label class="add_label">Назва проекту
 					<input type="text" class="inputfield" placeholder="Введіть назву" qtip-position="left" qtip-content="Напишіть пароль" id="name"></label>
 					<label class="add_label">Картинка проекту
-					<div class="fileform">
+					<div class="fileform"  qtip-position="left" qtip-content="зображення">
 					<div id="fileformlabel">Завантажити зображення</div>
-					<input type="file" name="upload" id="upload" onchange="getName(this.value);" />
+					<input type="file" name="upload" id="upload" onchange="getName(this.value);" >
 					</div></label>
 					<label class="add_label">URL проекту
 					<input type="url" class="url_input" placeholder="Додати посилання" qtip-position="left" qtip-content="Напишіть пароль" id="Url">

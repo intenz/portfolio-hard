@@ -30,6 +30,7 @@ var myModule = (function () {
 		$('#add_work_form').on('submit', _addProject);
 	};
 
+
 	var _showModal = function (e) {
 		e.preventDefault();
 		var divPopup = $('#element_to_pop_up'),
@@ -69,21 +70,21 @@ var myModule = (function () {
 	};
 
 	var _ajaxForm = function (form, url) {
-		if(!validation.validateForm(form)) return false;
+		if(!validation.validationFile(form)&&!validation.validateForm(form)) return false;
 
-		var data = form.serialize();
+	// 	var data = form.serialize();
 
-		var result= $.ajax({
-			url: url,
-			type: 'POST',
-			dataType: 'json',
-			data: data,
-	}).fail (function(ans){
-		console.log('problem');
-		form.find('er_send').text('na serveri prob').show();
-	});
+	// 	var result= $.ajax({
+	// 		url: url,
+	// 		type: 'POST',
+	// 		dataType: 'json',
+	// 		data: data,
+	// }).fail (function(ans){
+	// 	console.log('problem');
+	// 	form.find('er_send').text('na serveri prob').show();
+	// });
 
-		return result;
+	// 	return result;
 	};
 
 	// Возвращаем объект (публичные методы) 

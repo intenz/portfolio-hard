@@ -57,14 +57,13 @@ var validation = (function(){
 
 
 var validateForm = function(form) {
-	var elements = form.find('input, textarea').not('input[type="file"], input[type="hidden"]'),
+	var elements = form.find('input, textarea').not('input[type="hidden"], input[type="file"]'),
 	valid = true;
 
 	$.each(elements, function (index, val){
 		var element = $(val),
 		val= element.val(),
 		pos = element.attr('qtip-position');
-		// console.log(pos);
 
 		if(val.length === 0){
 			element.addClass('has-error');
@@ -76,10 +75,37 @@ var validateForm = function(form) {
 	return valid;
 };
 
+// Валидация инпута file
+  function validationFile(form) {
+    var
+      $inputFile = form.find("input[type='file']"),
+      $labelFile = form.find(".fileform"),
+      isValid = true;
+
+    _createQtip($labelFile);
+    //$labelFile.trigger("hideTooltip");
+
+    if (!$inputFile.val()) {
+      $labelFile.addClass("has-error").trigger("show");
+      isValid = false;
+      //console.log(this);
+    } else {
+      $labelFile.removeClass("has-error").trigger("hideTooltip");
+    };
+    $inputFile.change(function () {
+      if ($inputFile.val()) {
+        $labelFile.removeClass("has-error").trigger("hideTooltip");
+      } else {
+        $labelFile.trigger("hideTooltip");
+      }
+    });
+    return isValid;
+  };
 
 	return {
 		init: init,
-		validateForm: validateForm
+		validateForm: validateForm,
+		validationFile: validationFile
 	};
 
 })();
